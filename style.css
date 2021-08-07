@@ -1,35 +1,140 @@
 *{
-    border-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
 }
 
-h1{
-    color: rgb(94, 175, 94);
-    font-family:"david";
-    font-size:70px;
+#navigation{
+    background-color: #ecd2d8;
+    color:#b34c66;
 }
 
-form{ 
-    color: rgb(94, 175, 94);
-    font-weight: bold;
-    box-shadow: 13px -6px 6px -3px rgba(0,0,0,0.57)
+.centered-object{
+    text-align: center;
 }
 
-#button1 {
-    width: 270px;
-    border-radius: 30px;
-    line-height: 40px;
-    background-color: rgb(94, 175, 94);
-    color: white; 
-    box-shadow: 0px 10px 13px -7px #000000 , 13px -6px 6px -3px rgba(0,0,0,0.57)
+header{
+    background-color:#b34c66;
+    color: white;
+    position: relative;
+    padding-bottom: 15px;
 }
 
-#textField {
-    font-size:24px;
-    background-color: rgb(255, 253, 153);
-    color: rgb(211, 144, 155);
+header div span p{
+    background-color: #d9a5b2;
+    border-radius: 1mm;
+    width: 80px;
+    margin-left: 10px;
+    display: inline-block;
 }
 
-::placeholder {
-    font-family: david;
-    font-size: 20px;
+.spaced-object-down{
+    padding-bottom: 10px;
+}
+
+.blacked-object{
+    color: black;
+}
+
+.profile-picture{
+    border-radius: 1mm;
+    width: 240px;
+    height: 340px;
+    float: left;
+    position:relative;
+    bottom: 345px;
+    left: 65px;
+}   
+
+body {
+    background-color: #ecd2d8; 
+    margin: 0px;
+}
+
+#web-store{
+    border-radius: 1mm;
+    border-style: solid;
+    border-width: 2px;
+    width: 240px;
+    height: 340px;
+    position: relative;
+    right: 25px; 
+}
+
+.projects-display{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    right: 25px;
+}
+
+#signup-page{
+    border-radius: 1mm;
+    border-style: solid;
+    border-width: 2px;
+    width: 240px;
+    height: 340px;
+    margin-top: 50px;
+    position: relative;
+    right: 25px; 
+}
+
+.pushed-left{
+    position: relative;
+    right: 45px;
+}
+
+footer{
+    background-color:#b34c66;
+}
+
+.sign-up{
+    text-align: center;
+    background-color:#e66686;
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 25px;
+}
+
+fieldset{
+    border-style: none;
+}
+
+.text-fields{
+    background-color: #e66686;
+    border-style: solid;
+    border-width: 1px;
+    border: transparent;
+    position: relative;
+    bottom: 4px;
+}
+
+.span-border-bottom{
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+#free-comment{
+    padding: 30px 150px;
+    margin-top: 10px;
+}
+
+::placeholder{
+    text-align: left;
+    position:relative;
+    right: 145px;
+    bottom: 25px;
+}
+
+#copyrights{
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-top: unset;
+    color: white;
+}
+
+#send-button{
+    width: 100px;
+    height: 25px;
 }

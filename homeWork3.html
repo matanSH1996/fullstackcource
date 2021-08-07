@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5e0e923cd3.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../ex3/style.css">
+    <link rel="github_link" href="https://github.com/matanSH1996/fullstackcource">
+    <title>index</title>
+    
+</head>
+<body>
+    <header>
+        <div>
+            <!--navigation part-->
+            <nav class="centered-object" id="navigation">
+                <a href="#" class="blacked-object">קצת עליי</a>&nbsp;|
+                <a href="#" class="blacked-object">הפרוייקטים שלי</a> &nbsp;|
+                <a href="#" class="blacked-object">צרו קשר</a>
+            </nav>
+        </div>
+           <!--main title and qualities--> 
+        <div class="pushed-left">
+            <h1>מתן שטרן</h1>
+            <p>מפתח FULLSTACK</p>
+        </div>
+        <div class="pushed-left">
+            <span>
+                <p class="centered-object">HTML 5</p>
+            </span>
+            <span>
+                <p class="centered-object">CSS</p>
+            </span>
+            <span>
+                <p class="centered-object">JS</p>
+            </span>
+        </div>
+        
+        <!--communication options-->
+        <div>
+            <nav class="pushed-left">
+                <div class="spaced-object-down">
+                    </i><a href="tel:+972527729909"><i class="fas fa-phone blacked-object" title="mobile-Icon"></i></a> &nbsp; +972 52-772-9909
+                </div>
+                <div class="spaced-object-down">
+                     </i><a href="mailto:matan.shtern2@gmail.com"><i class="fas fa-envelope blacked-object " title="mail-Icon"></i></a>&nbsp; matan.shtern2@gmail.com
+                </div>
+                <div>
+                    <a href="https://www.linkedin.com/in/matanshtern"><i class="fab fa-linkedin blacked-object" title="linkedin-Icon"></i></a>&nbsp; linkedin.com/in/matanshtern
+                </div>                  
+            </nav>  
+        </div>
+
+        <!--information about the author-->
+        <div class="pushed-left">
+            <h2 title="information about the author">קצת עליי</h2>
+            <p>מפתח FULLSTACK בעל ניסיון של 3 חודשים.&nbsp;מבצע הכשרה מקצועית במכללת INT למקצועות הטכנולוגיה.</p>
+            <p>היעד שלי - להשתלב בעולמות הפיתוח ולהתמקצע בתחום ה "AI" או ה- GAMING. </p>
+            <span>
+                <img src="../ex3/photos/profile_pic.jpg" alt="profile picture" class="profile-picture">
+            </span>
+        </div>
+    </header>
+    
+    <!--main part-->
+    <main>
+        <h2 title="other projects related to the author" class="pushed-left">הפרוייקטים שלי:</h2>
+        <div class="projects-display">
+            <span>
+                <img src="../ex3/photos/project1.jpg" alt="web store" id="web-store">&nbsp;
+            </span>
+            <div class="pushed-left">
+                <span>
+                    <h3>פרוייקט - חנות דיגיטאלית:</h3>
+                    <h6>יולי 2021</h6>       
+                    <p>בפרוייקט, נדרשנו לייצר לוגו שמורכב מתמונה וכותרת ראשית.</p>
+                    <p>בחלק הבא, צירפנו תוכן עניינים שמורכב מהיפר-קישורים, עם אפשרות ליצירת קשר ע"י לחיצה על כפתור.</p>
+                    <p>בחלק המרכזי מיקמנו את המוצרים.</p>
+                    <p>כל מוצר מורכב מתמונה, כותרת, מחיר וכפתור שמאפשר ללקוח הוספת המוצר לסל.</p>
+                </span>  
+            </div> 
+        </div>
+
+        <div class="projects-display spaced-object-down">
+            <span>
+                <img src="../ex3/photos/project2.jpg" alt="signup page" id="signup-page">&nbsp;
+            </span>
+            <div class="pushed-left">
+                <span>
+                    <h3>פרוייקט - טופס רישום משתמשים אינטרנטי:</h3>
+                    <h6>יולי 2021</h6> 
+                    <p>בפרוייקט, נדרשנו לייצר פורמט לרישום משתמשים.</p>
+                    <p>פורמט הרישום כולל - שם ושם משפחה, אימייל, ת"ז, מגדר ואפשרות משתמש להשארת הודעה.</p>
+                </span>
+            </div>
+        </div>
+    </main>
+
+    <!--footer part-->
+    <footer>
+        <div>
+            <form action="signup" method="post" class="sign-up">
+                <fieldset>
+                    <span class="span-border-bottom">
+                        <label>שם מלא:</label>&nbsp;
+                        <input type="text" name="full_name" class="text-fields"><br>
+                    </span>
+                    <span class="span-border-bottom">
+                        <label>כתובת מייל:</label>&nbsp;
+                        <input type="text" name="full_name" class="text-fields"><br>
+                    </span>
+                    <span>
+                        <input type="text" name="text_box" placeholder="Type here" id="free-comment">
+                    </span>
+                </fieldset>               
+                <span>
+                    <button id="send-button">שלח</button>
+                </span>
+            </form>
+        </div>
+        <div id="copyrights">
+            <p>Matan Shtern &copy; 2021 copyrights</p> 
+        </div>            
+    </footer>
+</body>
+</html>
