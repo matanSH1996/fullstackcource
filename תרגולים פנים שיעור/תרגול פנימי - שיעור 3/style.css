@@ -1,0 +1,21 @@
+.color {color: blue;
+font-family: tahoma;}
+#footer {text-align: center;}  
+p{margin-top: 20px;} 
+img {border-radius: 50%;
+    border:dotted 4px;
+    border-color: pink;
+    width: 250px;
+    height: 250px;
+    margin-right: 10px;}
+a{display: inline-block;
+color: white;
+background-color: lightgreen;
+border-radius: 8px;
+padding: 100px;
+text-align: center;
+margin-right: 20px;}
+
+nav{text-align: center;
+background-color: lightskyblue;
+padding: 20px;}

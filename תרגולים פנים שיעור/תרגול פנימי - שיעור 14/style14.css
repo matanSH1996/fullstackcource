@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: turquoise;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+}
+
+nav .nav-menu li{
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+nav .nav-menu li a:hover{
+    background-color: whitesmoke;
+}
+
+.hamburer-menu{
+    margin: 1rem;
+    display: none;
+    cursor: pointer;
+}
+
+.closed-menu , .icons i {
+    display: none;
+    cursor: pointer;
+}
+
+.getInfo{
+    margin: 1rem 0px 0px 1rem;
+}
+
+#my-btn{
+    margin:1rem 0px;
+}  
+
+.getInfo-div{
+    margin-top: 1rem;
+}
+
+#age-validation{
+    display: none;
+}
+
+#project-body{
+    width: 400px;
+    text-align: center;
+    margin: 0px calc(50% - 200px);
+}
+
+@media only screen and ( max-width: 530px ) {
+    .nav-menu{
+        height: 50vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-in-out;
+        display: none;
+    }
+
+    .closed-menu{
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    .hamburer-menu{
+        display: block;
+    }
+
+    nav .nav-menu li a:hover{
+        background: none;
+        font-size: 1.5rem;
+    }
+    
+}

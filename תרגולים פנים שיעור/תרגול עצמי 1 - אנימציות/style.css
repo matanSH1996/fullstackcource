@@ -1,0 +1,84 @@
+#naruto1:nth-of-type(1){
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: naruto1;
+    animation-duration: 6s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 2s;
+    }
+
+@keyframes naruto1 {
+      0% {
+        opacity:1;
+      }
+      17% {
+        opacity:1;
+      }
+      25% {
+        opacity:0;
+      }
+      92% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+}
+
+#naruto2:nth-of-type(2){
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: naruto2;
+    animation-duration: 6s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 4s;
+    }
+
+@keyframes naruto2 {
+    0% {
+        opacity:1;
+      }
+      17% {
+        opacity:1;
+      }
+      25% {
+        opacity:0;
+      }
+      92% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+}
+
+#naruto3:nth-of-type(3){
+    width: 100px;
+    height: 100px;
+    position: relative;
+    animation-name: naruto3;
+    animation-duration: 6s;
+    animation-timing-function:ease-in-out;
+    animation-delay: 6s;
+    animation-play-state: running;
+    }
+
+@keyframes naruto3 {
+    0% {
+        opacity:1;
+      }
+      17% {
+        opacity:1;
+      }
+      25% {
+        opacity:0;
+      }
+      92% {
+        opacity:0;
+      }
+      100% {
+        opacity:1;
+      }
+    }

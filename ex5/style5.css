@@ -1,0 +1,283 @@
+*{
+    direction: ltr;
+    font-family: 'Rubik', 'Roboto', sans-serif;
+}
+
+header section{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+.cover1{
+    background-image: url(./photos5/fullstack-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2mm;
+    margin: 2rem 0.5rem 3rem 0.5rem;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.centered-object{
+    vertical-align: middle;
+    align-items: center;
+}
+
+.fa-search{
+    position: relative;
+    left: 1.5rem;
+    vertical-align: middle;
+}
+
+.header-logo{
+    height: 2rem;
+    width: 2rem;
+}
+
+body{
+    margin: 0px;
+    background-color: #c6ebff59;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+    opacity:1;
+    text-align: center;
+    background-color: black;
+    border-radius: 2mm;
+    margin: 0px;
+    position: relative;
+    
+}
+
+h4{
+    color: white;
+    opacity:1;
+    text-align: center;
+    background-color: black;
+    margin-top: 0px;
+    position: relative;
+    padding-top: 1vh;
+}
+
+.lets-talk-button{
+    position: relative;
+    height: 25px;
+    width: 100px;
+    position: absolute;
+    bottom: 0%;
+    margin: 15px calc(50% - 50px) 2px;
+    background-color: #00ffe7;
+    border: black;
+    border-width: 1px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1mm;
+}
+
+
+
+h3{
+    text-align: center;
+    border-bottom: solid;
+    color: black;
+    margin: 0px 30%;
+}
+
+.ux-ui-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+#ux-ui-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+#landing-pages-icon{
+    width: 40vw;
+    background-color: #15164f;
+    border-radius: 2mm;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0.2rem 0.4rem 0rem;
+}
+
+#landing-pages-image{
+    width: 7rem;
+}
+
+#user-flow-icon{
+    width: 40vw;
+    background-color: #04f7e0;
+    border-radius: 2mm;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0rem 0.4rem 0.2rem;
+}
+
+#user-flow-image{
+    width: 7rem;
+    margin-bottom: 0.9rem;
+}
+
+#mobile-app-design-icon{
+    width: 40vw;
+    background-color: #70c6ff;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2mm;
+    margin: 0px 0.2rem 1rem 0rem;
+}
+
+#mobile-app-image{
+    width: 7rem;
+    border-radius: 2mm;
+    margin-bottom: 1.5rem;
+}
+
+#web-app-design-icon{
+    width: 40vw;
+    background-color: #1649c9;
+    border-radius: 2mm;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0rem 1rem 0.2rem;
+}
+
+#web-app-design-image{
+    width: 7rem;
+    border-radius: 2mm;
+}
+.my-services{
+    background-color: #e7eef954;
+}
+
+#development-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+.first-row{
+    margin: 0px calc(50% - 45px);
+    vertical-align: middle;
+}
+
+#html-logo{
+    width: 90px;
+}
+
+.second-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#css-logo{
+    width: 66px;
+    height: 90px;
+}
+
+#java-script-logo{
+    width: 90px;
+    height: 90px;
+}
+
+.third-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#mongodb-logo{
+    width: 90px;
+    height: 90px;
+}
+
+#vuejs-logo{
+    width: 90px;
+    height: 90px;
+}
+
+#angular-logo{
+    width: 90px;
+    height: 90px;
+}
+
+.forth-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#responsiveness{
+    width: 90px;
+    height: 65px;
+}
+
+#azure-cloud-logo{
+    width: 93px;
+    height: 65px;
+}
+
+#reactjs-logo{
+    width: 74px;
+    height: 65px;
+}
+
+.fifth-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#wordpress-logo{
+    width: 91px;
+    height: 57px;
+}
+
+#sql-logo{
+    width: 90px;
+    height: 57px;
+}
+
+.sixth-row{
+    margin: 0px calc(50% - 45px);
+    vertical-align: middle;
+}
+
+#nodejs-logo{
+    width: 90px;
+    height: 90px;
+}
+
+.my-projects{
+    background-color: rgb(94, 90, 90);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+#projects{
+    vertical-align: middle;
+    text-align: center;
+}

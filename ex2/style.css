@@ -1,0 +1,40 @@
+*{
+    font-family:"david";
+}
+
+h1{
+    color: rgb(212, 128, 122);
+    font-size:70px;
+}
+
+body{
+    font-size: 20px;
+}
+
+form{ 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    box-shadow: 13px -6px 6px -3px rgba(0,0,0,0.57);
+    width: 500px;
+}
+
+#button1 {
+    font-size: 20px;
+    width: 270px;
+    border-radius: 30px;
+    line-height: 40px;
+    background-color: rgb(231, 59, 59);
+    color: white; 
+    box-shadow: 0px 10px 13px -7px #000000 , 13px -6px 6px -3px rgba(0,0,0,0.57)
+}
+
+#textField {
+    font-size:24px;
+    background-color: rgb(243, 243, 233);
+    color: rgb(211, 144, 155);
+    border-color:red;
+}
+
+::placeholder {
+    font-size: 20px;
+}

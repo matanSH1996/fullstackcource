@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home_work2</title>
+    <link rel="stylesheet" type="text/css" href="../ex2/style.css">
+    <link rel="github_link" href="https://github.com/matanSH1996/fullstackcource">
+    
+</head>
+<body>
+    <h1>signup page:</h1>
+    <form action="signup" method="post"> 
+        <fieldset>
+            <label for="user_firstname"> first name </label>
+            <input type="text" id="textField" name="first_name" placeholder="isarel"><br>
+            <br>
+
+            <label for="user_lastname"> last name </label>
+            <input type="text" id="textField" name="last_name" placeholder="isareli"><br>
+            <br>
+
+            <label for="user_email"> email </label>
+            <input type="email" id="textField" name="user_email" placeholder="isarel.isareli@gmail.com"><br>
+            <br>
+            
+            <label for="user_id"> ID number </label>
+            <input type="number" id="textField" min="0" name="user_id" placeholder="000000000" maxlength="9" minlength="9"><br>
+            <br>
+
+            <label for="user_gender"> gender: </label><br>
+            <label for="male">male</label><input type="radio" name="gender_option"> 
+            <label for="female">female</label><input type="radio" name="gender_option">
+            <label for="other">other</label><input type="radio" name="gender_option"><br>          
+            <br>
+
+            <label for="textArea"> your comment:  </label>
+            <input type="text" id="textField" name="user_comment" placeholder="type here...">
+        </fieldset><br>                   
+
+        <button type="button" id="button1">Submit</button>        
+    </form>
+</body>
+</html>

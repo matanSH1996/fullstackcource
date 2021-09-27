@@ -1,0 +1,27 @@
+main{
+    background-image:url(./photos/photo2.jpg);
+    border-radius: 2mm;
+    height: 75vh;
+}
+
+h1{   
+    font-size: 96px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+main>div{
+    margin-left: 147px;
+    padding-top: 137px;
+    color: white;
+}
+
+@media only screen and( min-width: 1024px){
+
+}
+
+@media only screen and( min-width: 1024px){
+    
+}

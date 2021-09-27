@@ -1,0 +1,25 @@
+*{font-family: 'Assistant', sans-serif;
+font-family: 'Heebo', sans-serif;
+font-family: 'Karantina', cursive;
+}
+
+body{
+    margin: 0px;
+    background-image: url(./photos/businessman.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#header-part1{
+    color:#00356E;    ;
+    background-color: #B2BDC8;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    height: 2rem;
+}
+
+#header-part2{
+    
+}

@@ -1,0 +1,54 @@
+.logo {
+    vertical-align:middle;
+    display:inline-block;
+    font-size: 40px;
+    font-weight: bolder;
+}
+
+.header-references{
+    background-color: rgb(96, 223, 180);
+    padding: 10px;
+    border-radius: 2mm;
+    display:inline-block;
+}
+
+span nav a{
+    display:inline-block;  
+    background-color: lightskyblue;
+    border-radius: 2mm;
+    padding: 5px;
+    margin-right: 5px;
+    color: black;
+    font-size: 30px;
+}
+
+.img-beside-text{   
+    vertical-align:middle;
+    width: 80px;
+    height: 45px;
+}
+
+.goods-display{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.goods-border{
+    border-style:solid;
+    border-color: black;
+}
+
+main div button{
+    display: inline-block;
+    position: relative;
+    right: 90px;
+}
+
+footer a{
+    font-size: 20px;
+    color: black;
+}
+
+.text-size{
+    font-size: 20px;
+}

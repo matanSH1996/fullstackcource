@@ -1,0 +1,140 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    direction: rtl;
+}
+
+#navigation{
+    background-color: #ecd2d8;
+    color:#b34c66;
+}
+
+.centered-object{
+    text-align: center;
+}
+
+header{
+    background-color:#b34c66;
+    color: white;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+header div span p{
+    background-color: #d9a5b2;
+    border-radius: 1mm;
+    width: 80px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.spaced-object-down{
+    padding-bottom: 10px;
+}
+
+.blacked-object{
+    color: black;
+}
+
+.profile-picture{
+    border-radius: 1mm;
+    width: 240px;
+    height: 340px;
+    float: left;
+    position:relative;
+    bottom: 345px;
+    left: 65px;
+}   
+
+body {
+    background-color: #ecd2d8; 
+    margin: 0px;
+}
+
+#web-store{
+    border-radius: 1mm;
+    border-style: solid;
+    border-width: 2px;
+    width: 240px;
+    height: 340px;
+    position: relative;
+    right: 25px; 
+}
+
+.projects-display{
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    right: 25px;
+}
+
+#signup-page{
+    border-radius: 1mm;
+    border-style: solid;
+    border-width: 2px;
+    width: 240px;
+    height: 340px;
+    margin-top: 50px;
+    position: relative;
+    right: 25px; 
+}
+
+.pushed-left{
+    position: relative;
+    right: 45px;
+}
+
+footer{
+    background-color:#b34c66;
+}
+
+.sign-up{
+    text-align: center;
+    background-color:#e66686;
+    padding: 15px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 25px;
+}
+
+fieldset{
+    border-style: none;
+}
+
+.text-fields{
+    background-color: #e66686;
+    border-style: solid;
+    border-width: 1px;
+    border: transparent;
+    position: relative;
+    bottom: 4px;
+}
+
+.span-border-bottom{
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+#free-comment{
+    padding: 30px 150px;
+    margin-top: 10px;
+}
+
+::placeholder{
+    text-align: left;
+    position:relative;
+    right: 145px;
+    bottom: 25px;
+}
+
+#copyrights{
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-top: unset;
+    color: white;
+}
+
+#send-button{
+    width: 100px;
+    height: 25px;
+}

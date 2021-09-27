@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style14.css">
+    <script src="https://kit.fontawesome.com/5e0e923cd3.js" crossorigin="anonymous"></script>
+    <link rel="github_link" href="https://github.com/matanSH1996/fullstackcource">
+    <title>index14</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Study Hard</h1>
+            </div>
+            <div class="hamburer-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#" class="">about me</a></li>
+                <li><a href="#" class="">my projects</a></li>
+                <li><a href="#" class="">contact me</a></li>
+                <div class="closed-menu">
+                    <i class="fas fa-times"></i>
+                </div>
+            </ul>          
+        </nav>
+    </header>
+    <main>
+        <div id="project-body">
+            <form action="get">
+                <label for="name">full name</label><input type="text" class="getInfo" placeholder="israel israeli"><br> 
+                <label for="mail">mail</label><input type="email" class="getInfo" placeholder="israel@gmail.com"><br>
+                <label for="phone">phone</label><input type="tel" class="getInfo" placeholder="050-0000000"><br>
+                <label for="age">your birth date:</label><input type="number" class="getInfo" placeholder="insert your age"><br>               
+                <input type="button" id="my-btn" value="signup!">
+            </form>
+
+            <div class="getInfo-div">           
+                <label for="name">your name:</label><br><p class="pasteInfo"></p>
+                <label for="email">your email:</label><br><p class="pasteInfo"></p>
+                <label for="phone">your phone:</label><br><p class="pasteInfo"></p>
+            </div>
+            <div id="age-validation">
+                <img src="./photos/plant.jpg" alt="plant-picture">
+            </div>
+        </div>
+    </main>
+    <script src="./script14.js"></script>
+</body>
+</html>
