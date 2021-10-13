@@ -1,0 +1,625 @@
+*{
+    direction: ltr;
+    font-family: 'Rubik', 'Roboto', sans-serif;
+}
+
+header section{
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+
+#nav-div{
+    display: flex;
+    flex-direction: column;
+}
+
+#menu-list{
+    display: none;
+    list-style: none;
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    text-align: start;
+    padding: 0px;
+    border-radius: 1mm;
+}
+
+#menu-list.closed{
+    display: none;
+}
+
+#menu-list.open{
+    display: block;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+#bar-icon{
+    cursor: pointer;
+}
+
+.fa-bars::before{
+    height: 100px;
+    width: 100px;
+}
+
+.cover1{
+    background-image: url(./photos5/fullstack-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 2mm;
+    margin: 4rem 0.5rem 6rem 0.5rem;
+    height: 56vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.centered-object{
+    vertical-align: middle;
+    align-items: center;
+}
+
+.search-div{
+    position: relative;
+}
+
+.fa-search{
+    position: absolute;
+    bottom: 1.6px;
+    left: 8.5rem;
+}
+
+.header-logo{
+    height: 2rem;
+    width: 2rem;
+}
+
+body{
+    margin: 0px;
+    background-color: #c6ebff59;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: white;
+    opacity:1;
+    text-align: center;
+    background-color: black;
+    border-radius: 2mm;
+    margin: 0px;
+    position: relative;
+    
+}
+
+h4{
+    color: white;
+    opacity:1;
+    text-align: center;
+    background-color: black;
+    margin-top: 0px;
+    position: relative;
+    padding-top: 1vh;
+}
+
+#lets-talk-button{
+    position: relative;
+    height: 25px;
+    width: 100px;
+    position: absolute;
+    bottom: 0%;
+    margin: 15px calc(50% - 50px) 2px;
+    background-color: #00ffe7;
+    border: black;
+    border-width: 1px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 1mm;
+}
+
+
+#lets-talk-button {
+    animation-name: 'will-be-completed-in-the-future';
+    animation-duration: 2s; /* or: Xms */
+    animation-iteration-count: 1;
+    animation-direction: normal; /* or: normal */
+    animation-timing-function: ease-in-out; /* ease-out or: ease, ease-in, ease-in-out, linear, cubic-bezier(x1, y1, x2, y2) */
+    animation-fill-mode: both; /* forwards or: backwards, both, none */
+    animation-delay: 0s; /* or: Xms */ 
+}
+
+@keyframes transformIcon {
+   
+    0% {
+        transform: translateY(0) translateX(0);
+        border-radius: 1mm;
+        width: 100px;
+        font-size: 1rem;
+        opacity: 1;
+      }
+    
+    100% {
+        transform: translateY(135px) translateX(-130px);
+        border-radius: 50%;
+        width: 50px;
+        font-size: 8px;
+        opacity: 0;
+    }   
+}
+
+.blacked-object{
+    color: black;
+}
+
+.spaced-object-down{
+    padding-bottom: 10px;
+}
+
+#communication-ways-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#about-me-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#author-info{
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-picture{
+    border-radius: 1mm;
+    width: 180px;
+    height: 240px;
+}   
+
+#stickey-whatsapp-div{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 9;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+}
+
+#whatsapp-icon{
+    width: 50px;
+    height: 50px;
+}
+
+#contact-popup-section{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: rgb(165, 207, 212);
+    opacity: 1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.popup-content{
+    width: 250px;
+    margin: 4rem auto;
+}
+
+.popup-content>h2{
+    font-size: 1rem;
+
+}
+
+.getInfo{
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+#submit-button{
+    width: 100px;
+    margin: 1rem calc(50% - 50px);
+}
+
+h3{
+    text-align: center;
+    border-bottom: solid;
+    color: black;
+    margin: 0px 30%;
+}
+
+.ux-ui-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 7rem;
+}
+
+#ux-ui-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+#landing-pages-icon{
+    width: 40vw;
+    background-color: #15164f;
+    border-radius: 2mm;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0.2rem 0.4rem 0rem;
+}
+
+#landing-pages-image{
+    width: 7rem;
+}
+
+#user-flow-icon{
+    width: 40vw;
+    background-color: #04f7e0;
+    border-radius: 2mm;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px 0rem 0.4rem 0.2rem;
+}
+
+#user-flow-image{
+    width: 7rem;
+    margin-bottom: 0.9rem;
+}
+
+#mobile-app-design-icon{
+    width: 40vw;
+    background-color: #70c6ff;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    border-radius: 2mm;
+    margin: 0px 0.2rem 1rem 0rem;
+}
+
+#mobile-app-image{
+    width: 7rem;
+    border-radius: 2mm;
+    margin-bottom: 1.5rem;
+}
+
+#web-app-design-icon{
+    width: 40vw;
+    background-color: #1649c9;
+    border-radius: 2mm;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    margin: 0px 0rem 1rem 0.2rem;
+}
+
+#web-app-design-image{
+    width: 7rem;
+    border-radius: 2mm;
+}
+.my-services{
+    background-color: #e7eef954;
+    margin-top: 5rem;
+}
+
+#development-title{
+    text-align: center;
+    font-weight: bold;
+}
+
+#services-div{
+    margin-bottom: 5rem;
+}
+
+.first-row{
+    margin: 0px calc(50% - 45px);
+    vertical-align: middle;
+}
+
+#html-logo{
+    width: 90px;
+}
+
+.second-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#css-logo{
+    width: 66px;
+    height: 90px;
+}
+
+#java-script-logo{
+    width: 90px;
+    height: 90px;
+}
+
+.third-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#mongodb-logo{
+    width: 90px;
+    height: 90px;
+}
+
+#vuejs-logo{
+    width: 90px;
+    height: 90px;
+}
+
+#angular-logo{
+    width: 90px;
+    height: 90px;
+}
+
+.forth-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+#responsiveness{
+    width: 90px;
+    height: 65px;
+}
+
+#azure-cloud-logo{
+    width: 93px;
+    height: 65px;
+}
+
+#reactjs-logo{
+    width: 74px;
+    height: 65px;
+}
+
+.fifth-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#wordpress-logo{
+    width: 91px;
+    height: 57px;
+}
+
+#sql-logo{
+    width: 90px;
+    height: 57px;
+}
+
+.sixth-row{
+    margin: 0px calc(50% - 45px);
+    vertical-align: middle;
+}
+
+#nodejs-logo{
+    width: 90px;
+    height: 90px;
+}
+
+.my-projects{
+    background-color: rgb(94, 90, 90);
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.project-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem;
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    text-align: center;
+    width: 250px;
+}
+
+.project-display-reversed{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project{
+    border-radius: 1mm;
+    border-style: solid;
+    border-width: 2px;
+    width: 145px;
+    height: 210px;
+}
+
+.footer-title{
+    text-align: center;
+}
+
+.sign-up{
+    text-align: center;
+    background-color:#eaf4fd;
+    padding: 15px 0px;
+    font-size: 22px;
+}
+
+#footer-fieldset{
+    border-color: transparent;
+    padding: 0px;
+    margin-bottom: 3rem;
+}
+
+
+.span-border-bottom{
+    border-bottom: solid;
+    border-width: 1px;
+}
+
+.text-fields{
+    background-color: #eaf4fd;
+    border: transparent;
+    position: relative;
+    bottom: 4px;
+}
+
+#free-comment{
+    height: 75px;
+    width: 250px;
+    overflow: overlay;
+}
+
+#footer-submit-button{
+    width: 100px;
+    height: 25px;
+}
+
+#copyrights{
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-top: unset;
+    color: white;
+    padding: 1px 0px;
+    background-color: #001f82;
+}
+
+@media only screen and ( min-width: 1024px ) {
+
+    .cover1 {
+        background-image: url(./photos5/fullstack-cover.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 2mm;
+        margin: 4rem 0.5rem 6rem 0.5rem;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    #lets-talk-button {
+        position: relative;
+        height: 54px;
+        width: 200px;
+        bottom: 0%;
+        margin: 15px calc(50% - 100px) 2px;
+        background-color: #00ffe7;
+        border: black;
+        border-width: 1px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 1mm;
+        box-shadow: -14px 12px 6px 3px rgb(0 0 0 / 68%);
+    }
+
+    h3 {
+        text-align: center;
+        border-bottom: solid;
+        color: black;
+        margin: 0px 30%;
+        font-size: 2rem;
+    }
+
+    #ux-ui-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .ux-services{
+        font-size: 20px;
+    }
+
+    #development-title {
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .project-display {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 4rem;
+    }
+
+    .project-description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 17px;
+        text-align: center;
+        width: 400px;
+    }
+
+    .project {
+        border-radius: 1mm;
+        border-style: solid;
+        border-width: 2px;
+        width: 200px;
+        height: 300px;
+        margin: 4rem;
+    }
+
+    .project-display-reversed {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .sign-up {
+        text-align: center;
+        background-color: #eaf4fd;
+        padding: 15px 0px;
+        font-size: 32px;
+    }
+
+    #footer-submit-button {
+        width: 150px;
+        height: 30px;
+        background: #c6ebff;
+        border-radius: 1mm;
+    }
+
+}
