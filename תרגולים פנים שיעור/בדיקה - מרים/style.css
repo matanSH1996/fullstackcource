@@ -47,9 +47,15 @@
   
   .card__face--front {
     background-image: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background-image: url(./photos/human.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   
   .card__face--back {
     background-color:rgba(104, 105, 211, 0.925);
     transform: rotateY(180deg);
+    background-image: url(./photos/cila_cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
   }

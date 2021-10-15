@@ -15,14 +15,22 @@
 <body>
     <header>
         <section class="centered-object">
-            <div>
-                <i class="fas fa-bars"></i>
+            <!--navigation part-->
+            <div id="nav-div">
+                <i class="fas fa-bars" id="bar-icon"></i>                 
+                <nav>                   
+                    <ul id="menu-list">
+                        <li><a href="#" class="">About Me</a></li>
+                        <li><a href="#" class="">My Projects</a></li>
+                        <li><a href="#" class="">Contact Me</a></li>
+                    </ul>
+                </nav>
             </div>
             <div>
                 <i class="fas fa-globe-americas"></i>
             </div>
-            <div>
-                <input type="text" placeholder="חיפוש...">
+            <div class="search-div">
+                <input type="text" placeholder="search...">
                 <i class="fas fa-search"></i>
             </div>
             <div>
@@ -31,7 +39,7 @@
         </section>
     </header>
     <main>
-
+        
     <!--Cover and introduction-->
         <section class="cover1">
             <div>
@@ -39,9 +47,43 @@
                 <h4>A passionate Fullstack developer</h4>
             </div>
             <div>
-                <button class="lets-talk-button">
+                <button id="lets-talk-button">
                     Let's Talk
-                </button>
+                </button> 
+            </div>
+        </section>
+
+        <section class="introduction-section">            
+            <div id="about-me-div">
+                <div id="author-info">
+                    <h2 title="information about the author">About Me</h2>
+                    <p>FULLSTACK developer with a year of experience with coding.</p>
+                    <p>I completed my training at the Institute of Technology Studies - INT</p>
+                    <p>In the future my goal is to integrate with the development of AI softwares or GAMING</p>
+                </div>
+                <div id="profile-pic-div">
+                    <img src="./photos5/profile_pic.jpg" alt="profile picture" class="profile-picture">
+                </div>
+            </div>
+        </section>
+
+        <!--stickey whatsApp icon-->
+        <div id="stickey-whatsapp-div">
+            <img src="./photos5/WhatsApp.jpg" alt="WhatsApp-icon" id="whatsapp-icon">
+        </div>
+
+    <!--popup section-->
+        <section class="popup" id="contact-popup-section">
+            <div class="popup-content" id="contact-popup-div">
+                <div id="close-div"><i class="fas fa-times" id="close-icon"></i></div>
+                <h2>fill the details below:</h2>
+                <form action="get">
+                    <label for="name">full name</label>&nbsp;<input type="text" class="getInfo" placeholder="israel israeli"><br> 
+                    <label for="mail">mail</label>&nbsp;<input type="email" class="getInfo" placeholder="israel@gmail.com"><br>
+                    <label for="phone">phone</label>&nbsp;<input type="tel" class="getInfo" placeholder="050-0000000"><br>
+                    <label for="age">your age:</label>&nbsp;<input type="number" class="getInfo" placeholder="insert your age"><br>               
+                    <input type="submit" id="submit-button" value="submit">
+                </form>
             </div>
         </section>
 
@@ -59,25 +101,25 @@
                     <div class="ux-ui-container">
                         <div id="landing-pages-icon">
                             <img src="./photos5/landing-pages.jpg" alt="Landing Pages icon" id="landing-pages-image">
-                            <p>Landing Pages</p>
+                            <p class="ux-services">Landing Pages</p>
                         </div>
                         <div id="user-flow-icon">
                             <img src="./photos5/user-flow1.jpg" alt="User Flow" id="user-flow-image">
-                            <p>User Flow</p> 
+                            <p class="ux-services">User Flow</p> 
                         </div>
                         <div id="mobile-app-design-icon">
                             <img src="./photos5/mobile-app-design.jpg" alt="Mobile App Design" id="mobile-app-image">
-                            <p>Mobile App Design</p>                       
+                            <p class="ux-services">Mobile App Design</p>                       
                         </div>
                         <div id="web-app-design-icon">
                             <img src="./photos5/web-app-design.jpg" alt="Web App Design" id="web-app-design-image">
-                            <p>Web App Design</p>                     
+                            <p class="ux-services">Web App Design</p>                     
                         </div>
                     </div>
                 </div>
 
     <!--Development Services-->
-                <div>
+                <div id="services-div">
                     <div>
                         <p id="development-title">Development:</p>
                     </div>
@@ -143,8 +185,44 @@
 
         <!--my projects-->
         <section>
-            <div class="my-projects">
-                <p id="projects">projects space</p>
+            <div>        
+                <div class="project-display">
+                    <div class="project-description">
+                        <h2>digital store</h2>
+                        <h6>July 2021</h6>  
+                        <p>In the project, we required to produce a logo which created from an image and a headline</p>
+                        <p>in the next part, we created index, based on hyperlinks, with the option to contact us by clicking a button</p>
+                        <p>than we created the product index, made by it's price image, and product name</p>
+                        <p>and a button, which allows the user to add the product to a cart</p>
+                    </div>
+                    <div>
+                        <img src="./photos5/project1.jpg" alt="digital store project" class="project">
+                    </div>
+                </div>
+                <div class="project-display-reversed">
+                    <div class="project-description">
+                        <h2>digital sigh-up page</h2>
+                        <h6>July 2021</h6>
+                        <p>n the project, we required to produce a digital sigh-up page.</p>
+                        <p>the sign-up page contains - full name, email, ID, gender and comment space.</p>
+                        <p>each input has it unique validation which provides control over the user's action.</p>
+                    </div>
+                    <div>
+                        <img src="./photos5/project2.jpg" alt="digital sigh-up page" class="project">
+                    </div>
+                </div>
+                <div class="project-display">
+                    <div class="project-description">
+                        <h2>digital portfolio</h2>
+                        <h6>July 2021</h6>
+                        <p>in the project, we required to produce a digital portfolio.</p>
+                        <p>the portfolio allows the user to contact with the developer. </p>
+                        <p>introduce the developer abilities and projets.</p>
+                    </div>
+                    <div>
+                        <img src="./photos5/project3.jpg" alt="digital portfolio" class="project">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -153,9 +231,47 @@
 
         </section>
     </main>
-    <footer>
-
-    </footer>
+<!--footer part-->
+<footer>
+    <div>
+        <h2 class="footer-title">Good to stay in touch:</h2>
+    </div>
+    <div>
+        <form action="signup" method="GET" class="sign-up">
+            <fieldset id="footer-fieldset">
+                <span class="span-border-bottom">
+                    <label>full name:</label>&nbsp;
+                    <input type="text" name="full_name" class="text-fields"><br>
+                </span>
+                <span class="span-border-bottom">
+                    <label>mail:</label>&nbsp;
+                    <input type="text" name="full_name" class="text-fields"><br>
+                </span>
+                <span>
+                    <input type="text" name="text_box" placeholder="Type here" id="free-comment">
+                </span>
+            </fieldset>               
+            <span>
+                <input type="submit" id="footer-submit-button" value="submit">
+            </span>
+        </form>
+        <div id="communication-ways-div">
+            <h2>Ways to communicate:</h2>
+            <div class="spaced-object-down">
+            </i><a href="tel:+972527729909"><i class="fas fa-phone blacked-object" title="mobile-Icon"></i></a> &nbsp; +972 52-772-9909
+            </div>
+            <div class="spaced-object-down">
+                </i><a href="mailto:matan.shtern2@gmail.com"><i class="fas fa-envelope blacked-object " title="mail-Icon"></i></a>&nbsp; matan.shtern2@gmail.com
+            </div>
+            <div>
+                <a href="#"><i class="fab fa-linkedin blacked-object" title="linkedin-Icon" id="linkedin-icon"></i></a>&nbsp; linkedin.com/in/matanshtern
+            </div>
+        </div>
+    </div>
+    <div id="copyrights">
+        <p>Matan Shtern &copy; 2021 copyrights</p> 
+    </div>            
+</footer>
     <script src="./script5.js"></script>
 </body>
 </html>

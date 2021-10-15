@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>document</title>
+</head>
+<body>
+    <section class="container">
+        <!-- <div id="prods-container" class="flex"> -->
+            <!-- <div class="single-prod">
+                <img src="https://www.jessicagavin.com/wp-content/uploads/2019/02/carrots-7-1200.jpg" alt="">
+                <h2 id="title1">Product 1</h2>
+                <p>$20</p>
+                <button id="btn1" type="button" class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="single-prod">
+                <img src="https://post.healthline.com/wp-content/uploads/2020/09/tomatoes-1200x628-facebook-1200x628.jpg" alt="">
+                <h2 id="title2">Product 2</h2>
+                <p>$20</p>
+                <button id="btn2" type="button" class="add-to-cart">Add to cart</button>
+            </div>
+            <div class="single-prod">
+                <img src="https://www.almanac.com/sites/default/files/image_nodes/cucumbers.jpg" alt="">
+                <h2 id="title3">Product 3</h2>
+                <p>$20</p>
+                <button id="btn3" type="button" class="add-to-cart">Add to cart</button>
+            </div>
+        </div>
+        <form id="my-form" method="GET">
+            <input type="number" name="day" placeholder="DD">
+            <input type="number" name="month" placeholder="MM">
+            <input type="number" name="year" placeholder="YYYY">
+            <button type="submit">Submit</button>
+        </form>
+        <p id="number">10</p> -->
+        <ul id="my-products">
+            <li class="item-product">
+                <span class="item-name">Product 1 </span>
+                $<span class="item-price">10</span>
+                <button type="button" class="add-to-list">Add to list</button>
+                <button type="button" class="remove">remove from the list</button>
+            </li>
+            <li class="item-product">
+                <span class="item-name">Product 2 </span>
+                $<span class="item-price">20</span>
+                <button type="button" class="add-to-list">Add to list</button>
+                <button type="button" class="remove">remove from the list</button>
+            </li>
+            <li class="item-product">
+                <span class="item-name">Product 3 </span>
+                $<span class="item-price">30</span>
+                <button type="button" class="add-to-list">Add to list</button>
+                <button type="button" class="remove">remove from the list</button>
+            </li>
+            <li class="item-product">
+                <span class="item-name">Product 4 </span>
+                $<span class="item-price">40</span>
+                <button type="button" class="add-to-list">Add to list</button>
+                <button type="button" class="remove">remove from the list</button>
+            </li>
+            <li class="item-product">
+                <span class="item-name">Product 5 </span>
+                $<span class="item-price">50</span>
+                <button type="button" class="add-to-list">Add to list</button>
+                <button type="button" class="remove">remove from the list</button>
+            </li>
+        </ul>
+
+        <div id="list">
+            <h2>My list</h2>
+        </div>
+        <h3>$<span id="subtotal">0</span></h3>
+    </section>
+    <script src="scripts.js"></script>
+</body>
+</html>

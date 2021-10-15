@@ -1,0 +1,99 @@
+body {
+    background-color: rgb(250, 170, 141);
+    direction: ltr;
+    margin: 0; 
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(250, 170, 141);
+}
+
+.img {
+    height: 400px;
+    background-color: rgb(105, 37, 12);
+    top: 50px;
+    margin: 0;
+}
+
+.name {
+    font-size: 50px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+p.mystuddies {
+    font-size: 20px;
+    background-color: rgb(250, 170, 141);
+    display: inline-block;
+}
+
+#mypic {
+    border-radius: 30%;
+    display: inline-block;
+    width: 300px;
+    height: 230px;
+}
+
+.profile {
+    background-color: rgb(116, 36, 23);
+    display: flex;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 150px;
+}
+
+#myproject {
+    flex-direction: column;
+    left: 0;
+    padding: 40px;
+    
+}
+
+.left {
+    display: block;
+    left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 20px;
+}
+
+.projects {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.fillDetails {
+    border: none;
+}
+
+form {
+    text-align: center;
+}
+
+form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.single-prod img {
+    width: 300px;
+}
+
+#list {
+    text-align: center;
+}
