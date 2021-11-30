@@ -1,9 +1,0 @@
-.spinning-obj{
-    height: 100px;
-    width: 100px;    
-}
-
-@keyframes spin-div{
-
-
-}
