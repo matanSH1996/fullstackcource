@@ -1,0 +1,26 @@
+body{
+    margin: 0px;
+}
+
+footer{
+    margin-top: 420px;
+}
+
+i{
+    margin-left: 10px;
+    color: black;
+}
+
+.footer-title{
+    text-align: center;
+}
+
+#copyrights{
+    text-align: center;
+    border-style: solid;
+    border-width: 1px;
+    border-top: unset;
+    color: white;
+    padding: 1px 0px;
+    background-color: #0e3b8f;
+}
