@@ -32,8 +32,9 @@ td:nth-child(7){
     background-color: rgb(154, 220, 247);
 }
 
-.detail-table1{
+.detail-table{
     margin-top: 15px;
     margin-bottom: 15px;
+    text-align: center;
 }
 
