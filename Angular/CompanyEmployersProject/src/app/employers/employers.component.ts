@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Employee } from './employee';
 
+
 @Component({
   selector: 'app-employers',
   templateUrl: './employers.component.html',

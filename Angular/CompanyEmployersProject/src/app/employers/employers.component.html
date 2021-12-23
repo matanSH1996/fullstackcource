@@ -2,51 +2,79 @@
     <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </head>
 
-<table id="employees">
-    <thead>
-        <th>ID</th>
-        <th>First name</th>
-        <th>Last name</th>
-        <th>Date of birth</th>
-        <th>Salary</th>
-        <th>Email</th>
-    </thead>
-    <tbody>
-        <tr>
-          <td>{{employee.id}}</td>
-          <td>{{employee.firstName}}</td>
-          <td>{{employee.lastName}}</td>
-          <td>{{employee.dateOfBirth}}</td>
-          <td>{{employee.salary}}</td>
-          <td>{{employee.email}}</td>
-          <td><input type="checkbox"></td>
-        </tr>
-        <tr>
-            <td>{{employee1.id}}</td>
-            <td>{{employee1.firstName}}</td>
-            <td>{{employee1.lastName}}</td>
-            <td>{{employee1.dateOfBirth}}</td>
-            <td>{{employee1.salary}}</td>
-            <td>{{employee1.email}}</td>
+<body>    
+    <table id="employees">
+        <thead>
+            <th>ID</th>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Date of birth</th>
+            <th>Salary</th>
+            <th>Email</th>
+        </thead>
+        <tbody>
+            <tr>
+            <td>{{employee.id}}</td>
+            <td>{{employee.firstName}}</td>
+            <td>{{employee.lastName}}</td>
+            <td>{{employee.dateOfBirth}}</td>
+            <td>{{employee.salary}}</td>
+            <td>{{employee.email}}</td>
             <td><input type="checkbox"></td>
-        </tr>
-        <tr>
-            <td>{{employee2.id}}</td>
-            <td>{{employee2.firstName}}</td>
-            <td>{{employee2.lastName}}</td>
-            <td>{{employee2.dateOfBirth}}</td>
-            <td>{{employee2.salary}}</td>
-            <td>{{employee2.email}}</td>
-            <td><input type="checkbox"></td>
-        </tr>
-        <tr>
-            <td>{{employee3.id}}</td>
-            <td>{{employee3.firstName}}</td>
-            <td>{{employee3.lastName}}</td>
-            <td>{{employee3.dateOfBirth}}</td>
-            <td>{{employee3.salary}}</td>
-            <td>{{employee3.email}}</td>
-            <td><input type="checkbox"></td>
-        </tr>
-      </tbody>
-</table>
+            </tr>
+            <tr>
+                <td>{{employee1.id}}</td>
+                <td>{{employee1.firstName}}</td>
+                <td>{{employee1.lastName}}</td>
+                <td>{{employee1.dateOfBirth}}</td>
+                <td>{{employee1.salary}}</td>
+                <td>{{employee1.email}}</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>{{employee2.id}}</td>
+                <td>{{employee2.firstName}}</td>
+                <td>{{employee2.lastName}}</td>
+                <td>{{employee2.dateOfBirth}}</td>
+                <td>{{employee2.salary}}</td>
+                <td>{{employee2.email}}</td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr>
+                <td>{{employee3.id}}</td>
+                <td>{{employee3.firstName}}</td>
+                <td>{{employee3.lastName}}</td>
+                <td>{{employee3.dateOfBirth}}</td>
+                <td>{{employee3.salary}}</td>
+                <td>{{employee3.email}}</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div>
+        <label for="first name">Employee first name:</label>
+        <input type="text" [(ngModel)] = "employee.firstName" placeholder="israel"><br>
+        <label for="last name">Employee last name:</label>
+        <input type="text" [(ngModel)] = "employee.lastName" placeholder="israeli"><br>
+        <label for="last name">Employee date of birth:</label>
+        <input type="text" [(ngModel)] = "employee.dateOfBirth" placeholder="00/00/0000" disabled><br>
+        <label for="last name">Employee salary:</label>
+        <input type="text" [(ngModel)] = "employee.salary" placeholder="1000"><br>
+        <label for="last name">Employee salary:</label>
+        <input type="text" [(ngModel)] = "employee.email" placeholder="israel_israeli@gmail.com">
+    </div>
+    <div>
+        <label for="first name">Employee first name:</label>
+        <input type="text" [(ngModel)] = "employee1.firstName" placeholder="israel"><br>
+        <label for="last name">Employee last name:</label>
+        <input type="text" [(ngModel)] = "employee1.lastName" placeholder="israeli"><br>
+        <label for="last name">Employee date of birth:</label>
+        <input type="text" [(ngModel)] = "employee1.dateOfBirth" placeholder="00/00/0000" disabled><br>
+        <label for="last name">Employee salary:</label>
+        <input type="text" [(ngModel)] = "employee1.salary" placeholder="1000"><br>
+        <label for="last name">Employee salary:</label>
+        <input type="text" [(ngModel)] = "employee1.email" placeholder="israel_israeli@gmail.com">
+    </div>
+</body>
+
