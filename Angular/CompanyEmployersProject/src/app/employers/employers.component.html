@@ -3,7 +3,7 @@
 </head>
 
 <body>    
-    <table id="employees">
+    <!-- <table id="employees">
         <thead>
             <th>ID</th>
             <th>First name</th>
@@ -76,6 +76,12 @@
             <label for="last name">Employee salary:</label>
             <input type="text" [(ngModel)] = "employee1.email" placeholder="israel_israeli@gmail.com">
         </div>
-    </div>
-</body>
+    </div> -->
 
+    <h2>my staff:</h2>
+    <ul class="employee">
+        <li *ngFor="let employee of listOfEmployees">
+            <span>{{employee.id}}, </span> {{employee.firstName}}, {{employee.lastName}}, {{employee.dateOfBirth}}, {{employee.salary}}, {{employee.email}}
+        </li>
+    </ul>
+</body>
