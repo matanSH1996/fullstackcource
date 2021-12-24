@@ -80,8 +80,23 @@
 
     <h2>my staff:</h2>
     <ul class="employee">
-        <li *ngFor="let employee of listOfEmployees">
-            <span>{{employee.id}}, </span> {{employee.firstName}}, {{employee.lastName}}, {{employee.dateOfBirth}}, {{employee.salary}}, {{employee.email}}
+        <li *ngFor="let employee of listOfEmployees" (click)="onSelect(employee)">
+            <span>
+                {{employee.id}}, {{employee.firstName}}, {{employee.lastName}}, {{employee.dateOfBirth}}, {{employee.salary}}, {{employee.email}}
+            </span>
         </li>
     </ul>
+
+    <div *ngIf="selectedEmployee">
+        <h2>{{selectedEmployee.firstName}} {{selectedEmployee.lastName}}</h2>
+        <div>
+            <span>
+                id: {{selectedEmployee.id}}<br>
+            </span>
+            <label for="employee first name">employee first name:</label>
+            <input id="employee-first-name" [(ngModel)] =  "selectedEmployee.firstName" placeholder="israel"><br>
+            <label for="employee last name">employee last name:</label>
+            <input id="employee-last-name" [(ngModel)] = "selectedEmployee.lastName" placeholder="israeli">
+        </div>
+    </div>
 </body>

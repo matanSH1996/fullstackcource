@@ -1,6 +1,7 @@
+import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-// import { Employee } from './employee';
 import { EMPLOYEES } from '../list-employees';
+import { Employee } from './employee';
 
 
 @Component({
@@ -11,6 +12,10 @@ import { EMPLOYEES } from '../list-employees';
 export class EmployersComponent implements OnInit {
 
   listOfEmployees = EMPLOYEES;
+  selectedEmployee?: Employee;
+  onSelect(employee: Employee) :void{
+  this.selectedEmployee = employee;
+  }
 
 
   constructor() { }
