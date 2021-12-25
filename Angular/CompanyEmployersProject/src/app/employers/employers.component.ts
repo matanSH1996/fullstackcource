@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 // import { EMPLOYEES } from '../list-employees';
 import { Employee } from './employee';
 import { EmployeeService } from '../employee.service';
+import { MessageService } from '../message.service';
 
 
 @Component({
@@ -16,10 +17,12 @@ export class EmployersComponent implements OnInit {
   selectedEmployee?: Employee;
   onSelect(employee: Employee) :void{
   this.selectedEmployee = employee;
+
+  this.messageService.add(`Employee Component: Selected employee id= ${employee.id}`); 
   }
 
 
-  constructor(private employeeService: EmployeeService) { }
+  constructor(private employeeService: EmployeeService, private messageService: MessageService) { }
 
   getEmployees(): void {
     // this.listOfEmployees = this.employeeService.getEmployees();
