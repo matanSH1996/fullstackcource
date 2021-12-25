@@ -22,7 +22,9 @@ export class EmployersComponent implements OnInit {
   constructor(private employeeService: EmployeeService) { }
 
   getEmployees(): void {
-    this.listOfEmployees = this.employeeService.getEmployees();
+    // this.listOfEmployees = this.employeeService.getEmployees();
+    this.employeeService.getEmployees()
+    .subscribe(employees => this.listOfEmployees = employees);
   }
   
   ngOnInit(): void {
