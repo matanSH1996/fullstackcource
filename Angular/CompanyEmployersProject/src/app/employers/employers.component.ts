@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { EMPLOYEES } from '../list-employees';
+// import { EMPLOYEES } from '../list-employees';
 import { Employee } from './employee';
+import { EmployeeService } from '../employee.service';
 
 
 @Component({
@@ -10,16 +11,24 @@ import { Employee } from './employee';
 })
 export class EmployersComponent implements OnInit {
 
-  listOfEmployees = EMPLOYEES;
+  listOfEmployees: Employee[] = [];
+
   selectedEmployee?: Employee;
   onSelect(employee: Employee) :void{
   this.selectedEmployee = employee;
   }
 
 
-  constructor() { }
+  constructor(private employeeService: EmployeeService) { }
 
+  getEmployees(): void {
+    this.listOfEmployees = this.employeeService.getEmployees();
+  }
+  
   ngOnInit(): void {
+    this.getEmployees();
   }
 
+  
 }
+
