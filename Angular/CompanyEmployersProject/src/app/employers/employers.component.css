@@ -24,6 +24,7 @@ tr:nth-child(odd) {
 
 tr:hover{
     background-color: gray;
+    cursor: pointer;
 }
 
 td:nth-child(7){
@@ -38,3 +39,7 @@ td:nth-child(7){
     text-align: center;
 }
 
+#employees .selected{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255) ;
+}
