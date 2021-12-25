@@ -2,65 +2,28 @@
     <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
 </head>
 
-<body>    
+<body>
+    <div class="employees-data-sheet">
+        <table id="employees">
+            <thead>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Date of birth</th>
+                <th>Salary</th>
+                <th>Email</th>
+            </thead>
+            <tr *ngFor="let employee of listOfEmployees" [class.selected] = "employee === selectedEmployee" (click)="onSelect(employee)">            
+                <td>{{employee.id}}</td>
+                <td >{{employee.firstName}}</td>
+                <td >{{employee.lastName}}</td>
+                <td >{{employee.dateOfBirth}}</td>
+                <td >{{employee.salary}}</td>
+                <td >{{employee.email}}</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
 
-    <!-- <div class="details-area">
-        <div class="detail-table">
-            <label for="first name">Employee first name:</label>
-            <input type="text" [(ngModel)] = "employee.firstName" placeholder="israel"><br>
-            <label for="last name">Employee last name:</label>
-            <input type="text" [(ngModel)] = "employee.lastName" placeholder="israeli"><br>
-            <label for="last name">Employee date of birth:</label>
-            <input type="text" [(ngModel)] = "employee.dateOfBirth" placeholder="00/00/0000" disabled><br>
-            <label for="last name">Employee salary:</label>
-            <input type="text" [(ngModel)] = "employee.salary" placeholder="1000"><br>
-            <label for="last name">Employee salary:</label>
-            <input type="text" [(ngModel)] = "employee.email" placeholder="israel_israeli@gmail.com">
-        </div>
-        <div class="detail-table">
-            <label for="first name">Employee first name:</label>
-            <input type="text" [(ngModel)] = "employee1.firstName" placeholder="israel"><br>
-            <label for="last name">Employee last name:</label>
-            <input type="text" [(ngModel)] = "employee1.lastName" placeholder="israeli"><br>
-            <label for="last name">Employee date of birth:</label>
-            <input type="text" [(ngModel)] = "employee1.dateOfBirth" placeholder="00/00/0000" disabled><br>
-            <label for="last name">Employee salary:</label>
-            <input type="text" [(ngModel)] = "employee1.salary" placeholder="1000"><br>
-            <label for="last name">Employee salary:</label>
-            <input type="text" [(ngModel)] = "employee1.email" placeholder="israel_israeli@gmail.com">
-        </div>
-    </div> -->
-
-    <table id="employees">
-        <thead>
-            <th>ID</th>
-            <th>First name</th>
-            <th>Last name</th>
-            <th>Date of birth</th>
-            <th>Salary</th>
-            <th>Email</th>
-        </thead>
-        <tr *ngFor="let employee of listOfEmployees" [class.selected] = "employee === selectedEmployee" (click)="onSelect(employee)">            
-            <td>{{employee.id}}</td>
-            <td >{{employee.firstName}}</td>
-            <td >{{employee.lastName}}</td>
-            <td >{{employee.dateOfBirth}}</td>
-            <td >{{employee.salary}}</td>
-            <td >{{employee.email}}</td>
-            <td><input type="checkbox"></td>
-        </tr>
-    </table>
-
-    <div *ngIf="selectedEmployee" class="detail-table">
-        <h2>{{selectedEmployee.firstName}} {{selectedEmployee.lastName}}</h2>
-        <div>
-            <span>
-                id: {{selectedEmployee.id}}<br>
-            </span>
-            <label for="employee first name">employee first name:</label>
-            <input id="employee-first-name" [(ngModel)] =  "selectedEmployee.firstName" placeholder="israel"><br>
-            <label for="employee last name">employee last name:</label>
-            <input id="employee-last-name" [(ngModel)] = "selectedEmployee.lastName" placeholder="israeli">
-        </div>
-    </div>
+        <app-employee-detail [employee]="selectedEmployee"></app-employee-detail>
+    </div>    
 </body>

@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { FooterComponent } from './footer/footer.component';
 import { EmployersComponent } from './employers/employers.component';
 import { FormsModule } from '@angular/forms';
+import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
-    EmployersComponent
+    EmployersComponent,
+    EmployeeDetailComponent
   ],
   imports: [
     BrowserModule,

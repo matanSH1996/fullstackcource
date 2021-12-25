@@ -1,3 +1,17 @@
+.employees-data-sheet{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.employee-display-name{
+    text-align: center;
+}
+
+#mailBtn{
+    align-self: center;
+}
+
 #employees{
     border-collapse: collapse;
     margin-left: auto;
@@ -6,7 +20,7 @@
 
 th{
     background-color: rgb(47, 161, 228);
-    height: 25px;
+    height: 40px;
 }
 
 td {
@@ -31,12 +45,6 @@ td:nth-child(7){
     width: 10px;
     border: transparent;
     background-color: rgb(154, 220, 247);
-}
-
-.detail-table{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;
 }
 
 #employees .selected{

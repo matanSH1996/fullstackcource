@@ -1,0 +1,48 @@
+
+    <div *ngIf="employee" class="detail-table">
+        <h2 id="employee-display-name">{{employee.firstName}} {{employee.lastName}}</h2>
+        <div class="employee-detail-area">
+            <span>
+                id: {{employee.id}}<br>
+            </span>
+            <label for="employee first name">employee first name:</label>
+            <input id="employee-first-name" [(ngModel)] =  "employee.firstName" placeholder="israel"><br>
+
+            <label for="employee last name">employee last name:</label>
+            <input id="employee-last-name" [(ngModel)] = "employee.lastName" placeholder="israeli"><br>
+
+            <label for="employee date of birth">employee date of birth:</label>
+            <input id="employee-date-of-birth" [(ngModel)] = "employee.dateOfBirth" placeholder="1000" disabled><br>
+
+            <label for="employee salary">employee salary:</label>
+            <input id="employee-salary" [(ngModel)] = "employee.salary" placeholder="1000"><br>
+
+            <label for="employee email">employee email:</label>
+            <input id="employee-email" [(ngModel)] = "employee.email" placeholder="israel_israeli@gmail.com"><br>
+            <div id="mailBtn">
+                <button><a href="mailto:{{employee.email}}">send mail</a></button>
+            </div>
+        </div>
+
+        <!-- <div class="employee-detail-area">
+            <div class="label-sheet">
+                <label for="employee id">id:</label>
+                <label for="employee first name">employee first name:</label>
+                <label for="employee last name">employee last name:</label>
+                <label for="employee date of birth">employee date of birth:</label>
+                <label for="employee salary">employee salary:</label>
+                <label for="employee email">employee email:</label>
+            </div>
+            <div class="data-sheet">
+                {{employee.id}}
+                <input id="employee-first-name" [(ngModel)] =  "employee.firstName" placeholder="israel"><br>
+                <input id="employee-last-name" [(ngModel)] = "employee.lastName" placeholder="israeli"><br>
+                <input id="employee-date-of-birth" [(ngModel)] = "employee.dateOfBirth" disabled><br>
+                <input id="employee-salary" [(ngModel)] = "employee.salary" placeholder="1000"><br>
+                <input id="employee-email" [(ngModel)] = "employee.email" placeholder="israel_israeli@gmail.com"><br>
+            </div>
+            <div id="mailBtn">
+                <button><a href="mailto:{{employee.email}}">send mail</a></button>
+            </div>
+        </div> -->
+    </div>

@@ -1,4 +1,3 @@
-import { NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { EMPLOYEES } from '../list-employees';
 import { Employee } from './employee';
