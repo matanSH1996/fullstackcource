@@ -1,5 +1,5 @@
 export interface SocialButton {
     name : string;   
-    URL : string;
-    Icon : string;
+    url : string;
+    icon : string;
 }

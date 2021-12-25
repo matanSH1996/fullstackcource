@@ -24,3 +24,9 @@ i{
     padding: 1px 0px;
     background-color: #0e3b8f;
 }
+
+img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 3px;
+}

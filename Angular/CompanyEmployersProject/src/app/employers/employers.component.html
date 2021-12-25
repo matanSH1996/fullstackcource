@@ -40,28 +40,14 @@
             <th>Salary</th>
             <th>Email</th>
         </thead>
-        <tr *ngFor="let employee of listOfEmployees" [class.selected] = "employee === selectedEmployee" (click)="onSelect(employee)">
-            <td>
-                {{employee.id}}
-            </td>
-            <td >
-                {{employee.firstName}}
-            </td>
-            <td >
-                {{employee.lastName}}
-            </td>
-            <td >
-                {{employee.dateOfBirth}}
-            </td>
-            <td >
-                {{employee.salary}}
-            </td>
-            <td >
-                {{employee.email}}
-            </td>
-            <td>
-                <input type="checkbox">
-            </td>
+        <tr *ngFor="let employee of listOfEmployees" [class.selected] = "employee === selectedEmployee" (click)="onSelect(employee)">            
+            <td>{{employee.id}}</td>
+            <td >{{employee.firstName}}</td>
+            <td >{{employee.lastName}}</td>
+            <td >{{employee.dateOfBirth}}</td>
+            <td >{{employee.salary}}</td>
+            <td >{{employee.email}}</td>
+            <td><input type="checkbox"></td>
         </tr>
     </table>
 

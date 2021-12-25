@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { SocialButton } from './socialMediaButton';
+import { SocialButton } from '../socialMediaButton';
+import {SOCIALMEDIABUTTONS} from '../list-socialButtons'
 
 @Component({
   selector: 'app-footer',
@@ -8,38 +9,14 @@ import { SocialButton } from './socialMediaButton';
 })
 export class FooterComponent implements OnInit {
 
+  
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  facebook : SocialButton = {
-    name : 'facebook',
-    URL : 'https://www.facebook.com/matan.shteren.31/',
-    Icon :'-',
-  }
-
-  github : SocialButton = {
-    name : 'github',
-    URL : 'https://github.com/matanSH1996/fullstackcource.git',
-    Icon :'-',
-  }
-
-  linkedin : SocialButton = {
-    name : 'linkedin',
-    URL : 'www.linkedin.com/in/matanshtern',
-    Icon :'-',
-  }
-
-  email : SocialButton = {
-    name : 'email',
-    URL : 'matan.shtern2@gmail.com',
-    Icon :'-',
-  }
-  
-  whatsapp : SocialButton = {
-    name : 'whatsapp',
-    URL : 'https://web.whatsapp.com/',
-    Icon :'-',
-  }
+  copyrights = "Matan Shtern"
+  listOfSocialButtons = SOCIALMEDIABUTTONS;
+  copyrightYear = "2021" 
 }
