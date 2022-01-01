@@ -1,6 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Employee } from '../employers/employee';
 import { SendmailComponent } from '../sendmail/sendmail.component';
+import { MessageService } from '../message.service';
+import { EMPLOYEES } from '../list-employees';
 
 @Component({
   selector: 'app-employee-detail',
@@ -9,18 +11,23 @@ import { SendmailComponent } from '../sendmail/sendmail.component';
 })
 export class EmployeeDetailComponent implements OnInit {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
+
+  
+  sentMailStatus():void {
+    this.messageService.add('The email was sent successfully');
+  }
+
+  @Input() employee? : Employee;
+
+  displayMailDiv = false;
+
+  toggleMailDiv(){
+    this.displayMailDiv = !this.displayMailDiv;
+  }
 
   ngOnInit(): void {
+    
   }
-  @Input() employee? : Employee;
-  
-  // isClicked = true;
-  // onClick(){
-  //   this.isClicked = !this.isClicked;
-  // }
 
-  sendMail(){
-    this.sendMail
-  }
 }

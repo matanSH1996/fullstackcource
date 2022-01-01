@@ -20,35 +20,30 @@
             <label for="employee email">employee email:</label>
             <input id="employee-email" [(ngModel)] = "employee.email" placeholder="israel_israeli@gmail.com"><br>
             <div id="mailBtn">
-            <button>Send Mail</button>    
-            <!-- <button (click)="onClick()">Send Mail:</button> -->
-                <!-- <button (click)="onClick()">Send Mail</button> -->
-                <!-- <button><a href="mailto:{{employee.email}}">send mail</a></button> -->
+            <button (click)="toggleMailDiv()">New Mail</button>    
 
-            </div>           
+            </div>         
         </div>
     </div>
 
-    <!-- <app-messages></app-messages> -->
-    <!-- <div class="detail-table">
-        <button (click)="onClick()">click me</button>
-        <div *ngIf="isClicked" style="background-color: aqua;">
-
-            <div>
+    <div class="detail-table" *ngIf="displayMailDiv">
+       <div *ngIf="employee">
+            <form action="post">
                 <label for="mail addressee">To:</label>
-                <input id="mail-addressee" {{employee.email}}><br>
-            
+                <input id="mail-addressee" placeholder="{{employee.email}}" disabled><br>
+
                 <label for="mail copy addressee">Cc:</label>
                 <input id="mail-copy-addressee"><br>
-            
+
                 <label for="mail subject">Subject:</label>
                 <input id="mail-subject"><br>
-            
+                    
                 <label for="mail message">message:</label>
                 <input id="mail-message" placeholder="Text here..."><br>
-            
+
                 <div id="mailBtn">
-                    <button><a href="mailto: [(ngModel)] = 'employee.email'">send mail</a></button>
+                    <button (click)="sentMailStatus()"><a href="mailto: {{employee.email}}">send mail</a></button>
                 </div>
-            </div>
-        </div> -->
+            </form>
+       </div>                      
+    </div>
