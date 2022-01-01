@@ -33,7 +33,5 @@ export class EmployersComponent implements OnInit {
   ngOnInit(): void {
     this.getEmployees();
   }
-
-  
 }
 

@@ -1,0 +1,14 @@
+div{
+    background-color: rgb(88, 204, 88);
+    height: 250px;
+    width: 250px;
+    margin-top: 30px;
+}
+
+input{
+    width: 60px;
+}
+
+#check{
+    display: block;
+}

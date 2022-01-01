@@ -20,29 +20,35 @@
             <label for="employee email">employee email:</label>
             <input id="employee-email" [(ngModel)] = "employee.email" placeholder="israel_israeli@gmail.com"><br>
             <div id="mailBtn">
-                <button><a href="mailto:{{employee.email}}">send mail</a></button>
-            </div>
-        </div>
+            <button>Send Mail</button>    
+            <!-- <button (click)="onClick()">Send Mail:</button> -->
+                <!-- <button (click)="onClick()">Send Mail</button> -->
+                <!-- <button><a href="mailto:{{employee.email}}">send mail</a></button> -->
 
-        <!-- <div class="employee-detail-area">
-            <div class="label-sheet">
-                <label for="employee id">id:</label>
-                <label for="employee first name">employee first name:</label>
-                <label for="employee last name">employee last name:</label>
-                <label for="employee date of birth">employee date of birth:</label>
-                <label for="employee salary">employee salary:</label>
-                <label for="employee email">employee email:</label>
-            </div>
-            <div class="data-sheet">
-                {{employee.id}}
-                <input id="employee-first-name" [(ngModel)] =  "employee.firstName" placeholder="israel"><br>
-                <input id="employee-last-name" [(ngModel)] = "employee.lastName" placeholder="israeli"><br>
-                <input id="employee-date-of-birth" [(ngModel)] = "employee.dateOfBirth" disabled><br>
-                <input id="employee-salary" [(ngModel)] = "employee.salary" placeholder="1000"><br>
-                <input id="employee-email" [(ngModel)] = "employee.email" placeholder="israel_israeli@gmail.com"><br>
-            </div>
-            <div id="mailBtn">
-                <button><a href="mailto:{{employee.email}}">send mail</a></button>
+            </div>           
+        </div>
+    </div>
+
+    <!-- <app-messages></app-messages> -->
+    <!-- <div class="detail-table">
+        <button (click)="onClick()">click me</button>
+        <div *ngIf="isClicked" style="background-color: aqua;">
+
+            <div>
+                <label for="mail addressee">To:</label>
+                <input id="mail-addressee" {{employee.email}}><br>
+            
+                <label for="mail copy addressee">Cc:</label>
+                <input id="mail-copy-addressee"><br>
+            
+                <label for="mail subject">Subject:</label>
+                <input id="mail-subject"><br>
+            
+                <label for="mail message">message:</label>
+                <input id="mail-message" placeholder="Text here..."><br>
+            
+                <div id="mailBtn">
+                    <button><a href="mailto: [(ngModel)] = 'employee.email'">send mail</a></button>
+                </div>
             </div>
         </div> -->
-    </div>

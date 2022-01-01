@@ -7,6 +7,7 @@ import { EmployersComponent } from './employers/employers.component';
 import { FormsModule } from '@angular/forms';
 import { EmployeeDetailComponent } from './employee-detail/employee-detail.component';
 import { MessagesComponent } from './messages/messages.component';
+import { SendmailComponent } from './sendmail/sendmail.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { MessagesComponent } from './messages/messages.component';
     FooterComponent,
     EmployersComponent,
     EmployeeDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    SendmailComponent
   ],
   imports: [
     BrowserModule,

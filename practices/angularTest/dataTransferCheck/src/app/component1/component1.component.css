@@ -1,0 +1,11 @@
+.colorCheck{
+    background-color: rgb(88, 190, 204);
+    height: 250px;
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+#motivation-pic{
+    height: 50px;
+    width: 50px;
+}
