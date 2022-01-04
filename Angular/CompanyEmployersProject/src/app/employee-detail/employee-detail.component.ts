@@ -15,7 +15,7 @@ export class EmployeeDetailComponent implements OnInit {
 
   
   sentMailStatus():void {
-    this.messageService.add('The email was sent successfully');
+    this.messageService.add(`The email was sent successfully`);
   }
 
   @Input() employee? : Employee;
