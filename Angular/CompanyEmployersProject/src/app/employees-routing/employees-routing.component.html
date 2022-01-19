@@ -1,0 +1,32 @@
+<body>
+    <div class="employees-data-sheet">
+        <table id="employees">
+            <thead>
+                <th>ID</th>
+                <th>First name</th>
+                <th>Last name</th>
+                <th>Date of birth</th>
+                <th>Salary</th>
+                <th>Email</th>
+            </thead>
+            <tr *ngFor="let employee of listOfEmployees" [class.selected] = "employee === selectedEmployee" (click)="onSelect(employee)">            
+                <td routerLink="/details/{{employee.id}}">{{employee.id}}</td>
+                <td routerLink="/details/{{employee.id}}">{{employee.firstName}}</td>
+                <td routerLink="/details/{{employee.id}}">{{employee.lastName}}</td>
+                <td routerLink="/details/{{employee.id}}">{{employee.dateOfBirth|date: 'dd/MM/yyyy'}}</td>
+                <td routerLink="/details/{{employee.id}}">{{employee.salary |currency: 'ILS'}}</td>
+                <td routerLink="/details/{{employee.id}}">{{employee.email}}</td>
+                <td><input type="checkbox"></td>
+            </tr>
+        </table>
+       
+        <!-- <app-employee-detail [employee]="selectedEmployee"></app-employee-detail> -->
+    </div> 
+   
+</body>
+<!-- 
+"routerLink="/details/{{employee.id}}"
+routerLink="/details/{{employee.id}}"
+routerLink="/details/{{employee.id}}"
+routerLink="/details/{{employee.id}}"
+routerLink="/details/{{employee.id}}" -->

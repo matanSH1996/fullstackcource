@@ -8,3 +8,36 @@ h3{
     text-align: center; 
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+nav button{
+    margin: 2px;
+    border-radius: 0.5mm;
+    /* border-width: 0.1mm ; */
+    border-style: hidden;
+    background: white;
+}
+  
+nav a {
+    padding: 0.5rem;
+    text-decoration: none;
+    margin: 10px, 0px;
+    display: inline-block;
+    color: #000000;
+    border-radius: 1mm;
+}
+  
+nav a:hover {
+    color: #3b4b96;
+}
+
+nav a.active {
+    background-color: black;
+    color: white;
+}
+
+

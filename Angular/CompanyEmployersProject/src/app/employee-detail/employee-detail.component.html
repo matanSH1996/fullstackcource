@@ -20,11 +20,13 @@
             <label for="employee email">employee email:</label>
             <input id="employee-email" [(ngModel)] = "employee.email" placeholder="israel_israeli@gmail.com"><br>
             <div id="mailBtn">
-            <button (click)="toggleMailDiv()">New Mail</button>    
-
-            </div>         
+                <button (click)="toggleMailDiv()">New Mail</button>
+                <button (click)="goBackToLastLocation()">Go Back</button>
+            </div>
         </div>
     </div>
+
+
 
     <div class="detail-table" *ngIf="displayMailDiv">
        <div *ngIf="employee">

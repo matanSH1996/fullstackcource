@@ -1,9 +1,16 @@
-<div *ngIf="messageService.messages.length">
+<div *ngIf="messageService.messages.length; else currentStatus" class="msg-div">
 
-    <h2>Messages</h2>
+    <h2>Messages:</h2>
     <button class="clear"
             (click)="messageService.clear()">Clear messages</button>
     <div *ngFor='let message of messageService.messages'> {{message}} </div>
   
+
 </div><br>
 
+<ng-template #currentStatus>
+    <div class="msg-div">
+        <h2>Messages:</h2>
+        <p>no new messages!</p>
+    </div>
+</ng-template><br>

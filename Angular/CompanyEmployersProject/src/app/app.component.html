@@ -2,6 +2,13 @@
 
 <h3>welcome to our employee management workspace</h3>
 
-<app-employers></app-employers>
+<nav>
+    <button ><a routerLink="/employees-datasheet">Employees datasheet view</a></button><br>   
+    <button ><a routerLink="/employees-routing">Employees-routing</a></button><br>
+    <button ><a routerLink="/dashboard">Top 4 employees</a></button><br>
+    <button ><a routerLink="/homepage">Home Page</a></button><br>
+</nav>
+
+<router-outlet></router-outlet>
 <app-messages></app-messages>
 <app-footer></app-footer>

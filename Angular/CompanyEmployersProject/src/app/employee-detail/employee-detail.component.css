@@ -1,10 +1,12 @@
 .detail-table{
-    margin: 15px;
+    margin-left: 15px;
+    margin-bottom: 15px;
     padding: 10px;
     background-color: rgb(181, 233, 253);
     border-radius: 2mm;
     border-style: solid;
     border-width: 0.2mm;
+    max-width: 340px;
 }
 
 #employee-display-name{
@@ -28,4 +30,17 @@ input{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+}
+
+button{
+    color: rgb(0, 0, 0);
+    border-radius: 0.6mm;
+    font-size: 0.8rem;
+    margin: 5px;
+    cursor: pointer;
+    border-width: 0.1mm;
+}
+
+button:hover{
+    background: rgb(181, 233, 253);
 }

@@ -1,7 +1,3 @@
-<head>
-    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-</head>
-
 <body>
     <div class="employees-data-sheet">
         <table id="employees">
@@ -15,15 +11,16 @@
             </thead>
             <tr *ngFor="let employee of listOfEmployees" [class.selected] = "employee === selectedEmployee" (click)="onSelect(employee)">            
                 <td>{{employee.id}}</td>
-                <td >{{employee.firstName}}</td>
-                <td >{{employee.lastName}}</td>
-                <td >{{employee.dateOfBirth|date: 'dd/MM/yyyy'}}</td>
-                <td >{{employee.salary |currency: 'ILS'}}</td>
-                <td >{{employee.email}}</td>
+                <td>{{employee.firstName}}</td>
+                <td>{{employee.lastName}}</td>
+                <td>{{employee.dateOfBirth|date: 'dd/MM/yyyy'}}</td>
+                <td>{{employee.salary |currency: 'ILS'}}</td>
+                <td>{{employee.email}}</td>
                 <td><input type="checkbox"></td>
             </tr>
         </table>
-
+       
         <app-employee-detail [employee]="selectedEmployee"></app-employee-detail>
-    </div>    
+    </div> 
+   
 </body>

@@ -2,7 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Employee } from '../employers/employee';
 import { SendmailComponent } from '../sendmail/sendmail.component';
 import { MessageService } from '../message.service';
-import { EMPLOYEES } from '../list-employees';
+import { ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
+import { EmployeeService } from '../employee.service';
 
 @Component({
   selector: 'app-employee-detail',
@@ -11,7 +13,11 @@ import { EMPLOYEES } from '../list-employees';
 })
 export class EmployeeDetailComponent implements OnInit {
 
-  constructor(private messageService: MessageService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private messageService: MessageService,
+    private employeeService: EmployeeService,
+    private location: Location) { }
 
   
   sentMailStatus():void {
@@ -27,7 +33,16 @@ export class EmployeeDetailComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    
+    this.getEmployee();
+  }
+  
+  getEmployee(): void {
+    const id = Number(this.route.snapshot.paramMap.get('id'));//trnasform a string from the URL (the ID part), into a number
+    this.employeeService.getSingleEmployee(id) //get the ID of a single employee from the "employeeService" service
+      .subscribe(employee => this.employee = employee);
   }
 
+  goBackToLastLocation(){
+    this.location.back();
+  }
 }

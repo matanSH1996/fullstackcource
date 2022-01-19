@@ -1,0 +1,28 @@
+<h2>{{title}}</h2>
+
+<!-- <div>
+    {{event.name}}
+</div>
+<div>
+    {{event.date}}
+</div>
+<div>
+    {{event.time}}
+</div>
+ -->
+
+<table>
+    <th>name:</th>
+    <th>date:</th>
+    <th>time:</th>
+    <th>location:</th>
+
+    <tr *ngFor="let event of events"> 
+        <td>{{event.name}}</td>
+        <td>{{event.date}}</td>
+        <td>{{event.time}}</td>
+        <td><app-event-address [address]="event.location"></app-event-address></td>      
+    </tr>
+</table>
+
+
