@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.App{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formComponent{
+    width: 80vw;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.form-wrapper{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    border: solid;
+    margin: 15px 0px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.markAll{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 130px;
+    align-items: center;
+
+}
+
+.formComponent > button{
+    width: 80px;
+}
+
+.todoListComponent{
+    width: 80vw;
+    height: 250px;
+    border: solid;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.todoItemComponent{
+    border: solid;
+    border-width: 1px;
+    width:85% ;
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+    padding: 3px;
+    margin: 3px 0px;
+
+}
+
+.todoItem-checkBox{
+    vertical-align: middle;
+    margin-right: 2px;
+}

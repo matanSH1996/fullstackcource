@@ -1,0 +1,60 @@
+body{
+    display: flex;
+    margin: 0;
+}
+
+#moving-eye-project{
+    /* position: absolute; */
+}
+
+#landing-page{
+    position: relative;
+    width: 100vw;
+    background-color: rgb(255, 255, 255);
+}
+
+#owl-pic{
+    margin: 0px calc(50% - 39px);
+    position: relative; bottom: -10px;
+    z-index: 1;
+}
+
+
+#owl-face{ /* the owl picture*/
+    display: flex;
+}
+
+.eyes{
+    position: relative; top: 97px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.eye{
+    background-color: white;
+    border-radius: 50%;
+    width: 27px;
+    height: 27px;
+    display: block;
+    margin: 0px 2px;
+}
+
+.eye::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    transform: translate(0%, 50%);
+    border-radius: 50%;
+}
+
+main #identification-div{
+
+    width: 100vw;
+    height: 100vh;
+    background-color: aquamarine;
+}
+/* 78 X115 */
+/* 140 X 206.4 */
