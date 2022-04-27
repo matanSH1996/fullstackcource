@@ -1,11 +1,11 @@
 const router = require("express").Router();
-const { json } = require("express");
 const fs = require("fs")
-const dataFolderPath = "C:/fullstack/homework/practices/Backend/node demo/Shopping/data/"
+const usersDataPth = "C:/fullstack/homework/practices/Backend/node demo/Shopping/data/"
 const { v4: uuidv4 } = require('uuid')
+const bcrypt = require ('bcrypt')
 
 router.get("/all", (req,res) => {
-    fs.readFile(`${dataFolderPath}users.json`, "utf-8", async (err, data) =>{
+    fs.readFile(`${usersDataPth}users.json`, "utf-8", async (err, data) =>{
         if (err){
             res.send({error:true, message: "somthing went wrong"})
         }
@@ -29,7 +29,7 @@ router.get("/all", (req,res) => {
 
 router.post("/login" , (req,res) =>{
     const {userName,password} = req.body
-    fs.readFile(`${dataFolderPath}users.json`, "utf-8", async (err, data) =>{
+    fs.readFile(`${usersDataPth}users.json`, "utf-8", async (err, data) =>{
         if (err){
             res.send({error:true, message: "somthing went wrong"})
         }
@@ -43,25 +43,34 @@ router.post("/login" , (req,res) =>{
         //we should add "&& user.password == password" in the arrow function^
 
         if(!currentUser) res.send("username doesnt exist")
-        if(currentUser.password != password) res.send("password isnt correct")
+        // if(currentUser.password != password) res.send("password isnt correct")
+        //when using "bcrypt.hash()", we will need to replace the regular "password" with "bcrypt.compare()"
+        //which allow us to check if there is a match between the password and the encrypted password
+        if(await bcrypt.compare(password,currentUser.password)) return res.send("login successfully")
 
-        res.send("login successfully")
+        return res.send("password isnt correct")
         // res.send(currentUser)
     })
 })
 
 router.post("/register", (req,res) =>{
     const {userName,password} = req.body
-    fs.readFile(`${dataFolderPath}users.json`, "utf-8", async (err, data) =>{
+    fs.readFile(`${usersDataPth}users.json`, "utf-8", async (err, data) =>{
         if (err){
             res.status(500).send("somthing went wrong") 
         }
         const users = await JSON.parse(data)
 
+        const hashedPassword = await bcrypt.hash(password, 10)
+        //^"bcrypt.hash()" method, gets a password and number of crypt we want it to do
+        // console.log(hashedPassword)
+        //we will print the password iin order to make sure it is working
+
         const newUser = {
             id : uuidv4(),
             userName : userName,
-            password : password
+            password : hashedPassword
+            //we replaced "password" with "hashedPassword" or, crypted password
         }
 
         const duplicateCheck = users.find(user => user.userName == newUser.userName)
@@ -70,7 +79,7 @@ router.post("/register", (req,res) =>{
         //^we will check if the new users information successfully written in the client or console
 
         users.push(newUser)
-        fs.writeFile(`${dataFolderPath}users.json`, JSON.stringify(users), (err) =>{
+        fs.writeFile(`${usersDataPth}users.json`, JSON.stringify(users), (err) =>{
             if (err){
                 res.status(500).send("somthing went wrong") 
             }

@@ -1,0 +1,170 @@
+[
+    {
+      "id": 1,
+      "name": "cucumber",
+      "price": 11.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 2,
+      "name": "tomato",
+      "price": 12.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 3,
+      "name": "carrot",
+      "price": 8.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 4,
+      "name": "pepper",
+      "price": 15.5,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 5,
+      "name": "onion",
+      "price": 8.5,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 6,
+      "name": "sweet potato",
+      "price": 12.5,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 7,
+      "name": "potato",
+      "price": 9.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 8,
+      "name": "zucchini",
+      "price": 14.5,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 9,
+      "name": "cabbage",
+      "price": 12.5,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 10,
+      "name": "beet",
+      "price": 10.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 11,
+      "name": "cauliflower",
+      "price": 15.5,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 12,
+      "name": "avokado",
+      "price": 16.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 13,
+      "name": "lemon",
+      "price": 10.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 14,
+      "name": "mushrooms",
+      "price": 16.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 15,
+      "name": "eggplant",
+      "price": 13.5,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 16,
+      "name": "squash",
+      "price": 15.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 17,
+      "name": "garlic",
+      "price": 25.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 18,
+      "name": "artichoke",
+      "price": 22.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 19,
+      "name": "pumpkin",
+      "price": 19.9,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 20,
+      "name": "kohlrabi",
+      "price": 9.5,
+      "quantity": 100,
+      "category": "vegetables"
+    },
+    {
+      "id": 21,
+      "name": "grapefruit",
+      "price": 5.9,
+      "quantity": 100,
+      "category": "fruits"
+    },
+    {
+      "id": 22,
+      "name": "apple",
+      "price": 21.9,
+      "quantity": 100,
+      "category": "fruits"
+    },
+    {
+      "id": 23,
+      "name": "tangerines",
+      "price": 10.5,
+      "quantity": 100,
+      "category": "fruits"
+    },
+    {
+      "id": 24,
+      "name": "banana",
+      "price": 15.5,
+      "quantity": 100,
+      "category": "fruits"
+    }
+]

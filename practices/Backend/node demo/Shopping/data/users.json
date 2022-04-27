@@ -1,1 +1,12 @@
-[{"id":"5e03979a-244c-49d4-b92a-db64a2197308","userName":"john","password":"a12345"},{"id":"86ecc612-e1e4-431b-917f-d20eb534df10","userName":"mike","password":"b12345"}]
+[
+    {
+        "id": "86ecc612-e1e4-431b-917f-d20eb534df10",
+        "userName": "mike",
+        "password": "b12345"
+    },
+    {
+        "id": "2bd50a7e-615c-4964-b2d5-65891e88af94",
+        "userName": "john",
+        "password": "$2b$10$GIwaAM4jdH5euu4hlt/UpeB04UPjibsfj/zP61IFtOtQGeV7FER1S"
+    }
+]
