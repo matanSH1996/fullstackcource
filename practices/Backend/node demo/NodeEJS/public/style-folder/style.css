@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+}
+
+html{
+    height: 100%;
+}
+body {
+    background-color: blue;
+    text-align: center;
+    font-size: larger;
+    color: rgb(0, 0, 0);
+    background-color: rgb(80, 80, 80);
+    height: 100%;
+}
+
+.container-div{
+    background-color: rgb(146, 238, 247);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.cat404{
+    margin-top: 3rem;
+}
