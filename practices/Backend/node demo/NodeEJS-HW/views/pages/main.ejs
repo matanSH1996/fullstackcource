@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <%- include("../partials/head", {title : "Heroes Company"})%>
+
+<body class="main-body">
+    <h1>Welcome to our heroes company</h1>
+    <h2>Our heroes list:</h2>
+
+    <% heroes.forEach(hero =>{ %>
+        <div class="hero">
+            <h3>name: <%= hero.name %></h3>
+            <h5>power: <%= hero.power %></h5>
+            <label for="pick a hero">choose me &nbsp;<i class="fa-solid fa-arrow-right"></i>&nbsp;</label>
+            <input type="checkbox">
+            <button > <a href="/<%= hero.url %>" target="_blank"><%= hero.name %></a></button>
+        </div>
+    <% }) %>
+
+    
+
+    <!--footer part-->
+    <%- include("../partials/footer")%>
+</body>
+</html>

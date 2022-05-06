@@ -1,0 +1,143 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+body > h1{
+    text-align: center;
+    margin-top: 0;
+}
+
+/* main CSS settings: */
+.main-body{
+   background-color: #026674;
+}
+
+/* captain america CSS settings: */
+
+.CA-BG-Image{
+    background: url(./images/usa-flag1.jpg);
+    background-repeat:no-repeat ;
+    background-size:cover;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.2;
+}
+
+#CA-h1{
+    position: relative;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,56,146,0.01) 40%, rgba(226,21,76,1) 100%);
+    margin: 0;
+    padding: 20px;
+}
+
+#CA-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: rgb(34, 32, 32);
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+}
+
+.CA-text-section{
+    display: flex;
+    flex-direction: row;
+}
+
+#CA-h2{
+    text-align: center;
+    max-width: 140px;
+}
+
+.CA-profile-image-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,56,146,0.01) 40%, rgba(226,21,76,1) 100%);
+    height: 75px;
+
+}
+
+.CA-profile-image{
+    border-radius: 1mm;
+    margin: 10px 0px;
+}
+
+.back-to-main{
+    width: 100px;
+    height: 25px;
+    margin: 10px calc( 50% - 50px);
+}
+
+
+/* footer partials CSS settings: */
+
+footer{
+    display:flex ;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    justify-content: center;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-text > h2{
+    margin: 15px 0px;
+}
+
+.footer-text > h6{
+    margin: 15px 0px;
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 10px 0px 10px;
+}
+
+.icon-container > a{
+    color: rgb(224, 224, 224);  
+    margin: 5px;  
+}
+
+a:hover i{
+    color: aqua;
+}
+
+.copyrights{
+    font-size: 14px;
+    padding: 15px;
+    width: 100vw;
+    background-color: #000;
+    display:flex ;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.copyrights > span{
+    opacity: 0.4;
+}

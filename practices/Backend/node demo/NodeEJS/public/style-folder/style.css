@@ -6,11 +6,8 @@ html{
     height: 100%;
 }
 body {
-    background-color: blue;
-    text-align: center;
     font-size: larger;
     color: rgb(0, 0, 0);
-    background-color: rgb(80, 80, 80);
     height: 100%;
 }
 
@@ -26,4 +23,8 @@ body {
 
 .cat404{
     margin-top: 3rem;
+}
+
+.footer{
+    background-color: #435d9e;
 }
