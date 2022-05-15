@@ -1,0 +1,17 @@
+[
+    {
+        "username": "john",
+        "password": 12345,
+        "id": "88da9f0a-b9d9-4ef2-8278-80d3928b12dd"
+    },
+    {
+        "username": "mike",
+        "password": "password",
+        "id": "d1d185f4-0193-414d-b348-66e20f596acc"
+    },
+    {
+        "username": "matan",
+        "password": "$2b$10$7XoKp7D0hWt0iuSjnUmpFeW8MmhcM8Onlj6RIPbG7moxYIUtslo0K",
+        "id": "9d52d95f-1ee8-487c-8bbf-76fee2310cc8"
+    }
+]
