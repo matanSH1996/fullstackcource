@@ -1,17 +1,1 @@
-[
-    {
-        "id": "710c3614-f98c-4fd1-bf5c-5405a9055763",
-        "publisherId": "88da9f0a-b9d9-4ef2-8278-80d3928b12dd",
-        "tweet": "stop the war"
-    },
-    {
-        "id": "556dbd4c-4ef7-47f6-91c4-0a1c8a2f607f",
-        "publisherId": "88da9f0a-b9d9-4ef2-8278-80d3928b12dd",
-        "tweet": "peace and love"
-    },
-    {
-        "id": "8be91cc4-4b30-4e03-ad15-5e9feafad12a",
-        "publisherId": "d1d185f4-0193-414d-b348-66e20f596acc",
-        "tweet": "i love animals"
-    }
-]
+[{"id":"710c3614-f98c-4fd1-bf5c-5405a9055763","publisherId":"88da9f0a-b9d9-4ef2-8278-80d3928b12dd","tweet":"stop the war"},{"id":"556dbd4c-4ef7-47f6-91c4-0a1c8a2f607f","publisherId":"88da9f0a-b9d9-4ef2-8278-80d3928b12dd","tweet":"peace and love"},{"id":"8be91cc4-4b30-4e03-ad15-5e9feafad12a","publisherId":"d1d185f4-0193-414d-b348-66e20f596acc","tweet":"i love animals"},{"id":"23e294e9-c651-4bc5-a173-70472e54cbbb","publisherId":"9d52d95f-1ee8-487c-8bbf-76fee2310cc8","tweet":"testing"},{"id":"3a0db98e-af1d-4c3a-a26e-f1295c9a9428","publisherId":"9d52d95f-1ee8-487c-8bbf-76fee2310cc8","tweet":"another tweet"},{"id":"1daac52c-86c9-4709-96e6-8f3aad29e49d","publisherId":"9d52d95f-1ee8-487c-8bbf-76fee2310cc8","tweet":" and another one"}]

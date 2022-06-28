@@ -2,7 +2,12 @@ require("dotenv").config()
 const express = require("express")
 const app = express()
 const fs = require ("fs")
+const cookieParser = require('cookie-parser')
+
+app.set("view engine" , "ejs")
+
 app.use(express.json())
+app.use(cookieParser())
 
 app.use("/auth" , require("./routes/auth"))
 //when ever using the route "/auth", it will send him to "./routes/auth".

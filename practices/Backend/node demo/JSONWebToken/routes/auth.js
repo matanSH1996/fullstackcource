@@ -6,7 +6,9 @@ const usersFilePath = 'C:/fullstack/homework/practices/Backend/node demo/JSONWeb
 const bcrypt = require('bcrypt');
 const { v4: uuidv4 } = require('uuid');
 const saltRounds = 10;
-
+function generateAccessToken (someData) {
+    return jwt.sign(someData ,process.env.ACCESS_TOKEN_SECRET,{expiresIn: "30m"})
+}
 
 // -> stages for creating login route
 //get username and password
@@ -63,6 +65,8 @@ router.post("/register" , (req,res) =>{
     })
 })
 
+
+
 router.post("/login", (req,res) =>{
     const {username , password} = req.body
     // res.send("TEST")
@@ -77,9 +81,32 @@ router.post("/login", (req,res) =>{
         if(!decipheredPassword){return res.status(400).send("wrong password")}
         // res.send("login successfully")
 
-        const token = jwt.sign({username: currentUser.username, id: currentUser.id},process.env.TOKEN_SECRET)
-        res.send({messege : "login successfully", token})
+        const access_token = generateAccessToken({username: currentUser.username, id: currentUser.id})
+        const refresh_token = jwt.sign({id : currentUser.id}, process.env.REFRESH_TOKEN_SECRET ,{expiresIn: "100d"})
+        res.cookie("refresh-token" , refresh_token)
+        console.log(refresh_token)
+        res.send({access_token})
     })
+})
+
+router.get("/refresh" , (req,res) =>{
+        // res.send("TEST")
+        const refresh_token = req.cookies["refresh-token"]
+        console.log(refresh_token)
+        if(!refresh_token){return res.status(403).send("you need to log in first")}
+
+        jwt.verify(refresh_token , process.env.REFRESH_TOKEN_SECRET, (err , decoded) =>{
+            if(err){return res.sendStatus(403)}
+            // console.log(decoded)
+            const access_token = generateAccessToken(decoded.id)
+            res.send({token : access_token})
+        })
+        // res.send("we are on it")
+})
+
+router.delete("/logOut" , (req, res) =>{
+    res.clearCookie("refresh-token")
+    res.status(200).send("you logged out successfully")
 })
 
 module.exports = router

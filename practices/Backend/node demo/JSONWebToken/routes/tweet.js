@@ -22,7 +22,9 @@ router.get("/myTweets" ,verifyUser, (req, res) =>{
         if(err){return res.status(500).send("we are sorry, something went wrong")}
         const tweets = JSON.parse(data)
         const myTweets = tweets.filter(tweet => tweet.publisherId == req.userId)
-        res.send(myTweets)
+        res.render("tweet" , {tweets : myTweets})
+        // res.send(myTweets)
+
     })   
 })
 
@@ -84,6 +86,30 @@ router.delete("/deleteTweet" ,verifyUser , (req,res) =>{
         })
     })
 })
+
+// router.delete("/delete/:id" ,verifyUser , (req,res) =>{
+//     // res.send("CHECK")
+
+//     fs.readFile(`${tweetsFilePath}tweets.json`, 'utf-8', (err , data) =>{
+//         if(err){return res.status(500).send("we are sorry, something went wrong")}
+//         let tweets = JSON.parse(data)
+//         const targetIndex = tweets.find(tweet => tweet.id == req.params.id)
+//         if(targetIndex<0){return res.status(400).send("id not found")}
+//         //when the result is - empty array, the console will return "-1"
+
+//         const targetTweet = tweets[targetIndex]
+//         if(req.userId != targetTweet.publisherId){return res.status(400).send("sorry, this isnt your tweet, please choose another tweet")}
+//         tweets.splice(targetIndex, 1)
+
+//         fs.writeFile(`${tweetsFilePath}tweets.json`, JSON.stringify(tweets), (err) => {
+//             if(err){return res.status(500).send("we are sorry, something went wrong")}
+//             res.send("tweet deleted successfully")
+//         })
+//     })
+// })
+// --> in the example above ,delete method using params and splice
+
+        
 
 
 
