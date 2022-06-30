@@ -23,3 +23,36 @@ exports.getAllBirds = async (req, res) => {
     data: birds,
   });
 };
+
+exports.updateBird = async (req,res)=>{
+  try{
+    const { id } = req.params.id
+    const targetedBird = await Bird.findByIdAndUpdate( id, req.body)
+    res.json({
+      success:true,
+      data: targetedBird
+    }) 
+
+  } catch(error) {
+    res.json ({
+      success:false,
+      data: error.message
+    })
+  }
+}
+
+exports.deleteBird = async (req,res) =>{
+  try{
+    const targetedBird = await Bird.deleteOne( {_id : req.params.id} )
+    res.json({
+      success:true,
+      data: "the bird has successfully deleted"
+    }) 
+
+  } catch(error) {
+    res.json ({
+      success:false,
+      data: error.message
+    })
+  }
+}

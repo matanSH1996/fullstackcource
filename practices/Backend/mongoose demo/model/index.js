@@ -9,6 +9,7 @@ app.use(express.json());
 
 app.use("/cat", require("./routes/cat"));
 app.use("/bird", require("./routes/bird"));
+app.use("/fish", require ("./routes/fish"))
 
 const PORT = process.env.PORT;
 app.listen(PORT, () => console.log("Sever is running"));
