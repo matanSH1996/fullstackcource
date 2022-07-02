@@ -1,20 +1,15 @@
-const dotenv = require("dotenv")
-
+require("dotenv").config()
 const express = require ("express")
 const app = express()
 
-const connectDB = require("./utils/connectDB")
-dotenv.config()
-connectDB()
-
-//MIDDLEWARES
+//middlewares
 app.use(express.json())
 
-app.get("/" , (req, res) =>{
-    res.send("TEST")
-})
+const connectDB = require("./utils/connectDB")
 
-app.use("api/author" , require ("./routes/author"))
+connectDB()
+
+// app.use("api/author" , require ("./routes/author"))
 
 const PORT = process.env.PORT || 8000
 app.listen(() => console.log(`server is up on port ${PORT}`))
