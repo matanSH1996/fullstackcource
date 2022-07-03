@@ -1,0 +1,4 @@
+1. Book and Auther - update , delete
+2. Create Review model - populate with Book model
+
+** try to populate wihtout the model.populate function: clue - Schema **
