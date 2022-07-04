@@ -1,4 +1,5 @@
-const { Schema, model } = require('mongoose')
+const {Schema , model} = require("mongoose")
+
 //remember schema is a class and model is a function!
 
 //destracure is when you name an obj after a key name and it retains its value from a previous object
@@ -34,5 +35,5 @@ const authorSchema = new Schema({
     }
 })
 
-const Author = model("Author", authorSchema)
-module.exports = Author;
+const Author = model('Author' , authorSchema)
+module.exports = Author
