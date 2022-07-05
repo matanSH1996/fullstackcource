@@ -10,6 +10,7 @@ connectDB()
 app.use(express.json())
 
 app.use("/author", require("./routes/authors"))
+app.use("/book", require("./routes/books"))
 // app.get("/", (req,res) =>{res.send("TEST")})
 
 const PORT = process.env.PORT

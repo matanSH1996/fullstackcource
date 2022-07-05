@@ -18,8 +18,7 @@ exports.createBook = async (req,res) => {
 }
 
 exports.updateBook = async (req,res) => {
-    const { id } = req.query.id
-    const targetedBook = await Book.findByIdAndUpdate({_id: id}, req.body)
+    const targetedBook = await Book.findByIdAndUpdate(req.query.id , req.body)
     res.json({
         success: true,
         data : "the book has successfully updated"
@@ -27,8 +26,7 @@ exports.updateBook = async (req,res) => {
 }
 
 exports.deleteBook = async (req,res) => {
-    const { id } = req.query.id
-    const targetedBook = await Book.deleteOne({_id: id})
+    const targetedBook = await Book.deleteOne({id: req.query.id} )
     res.json({
         success: true,
         data : "the book has successfully deleted"
