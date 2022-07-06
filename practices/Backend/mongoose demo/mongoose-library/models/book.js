@@ -18,6 +18,11 @@ const bookSchema = new Schema({
         type: Schema.Types.ObjectId,
         ref: "Author",
         required: [true, "Book must have an author"]
+    } 
+    , review: {
+        type: Schema.Types.ObjectId,
+        ref: "Review",
+        required: [true, "Book must have review"]
     }
 })
 

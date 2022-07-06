@@ -1,7 +1,7 @@
 const Book = require("../models/book")
 
 exports.getAllBook = async (req,res) => {
-    const bookCollection = await Book.find().populate('author')
+    const bookCollection = await Book.find().populate('author review')
     res.json({
         success : true,
         data: bookCollection
